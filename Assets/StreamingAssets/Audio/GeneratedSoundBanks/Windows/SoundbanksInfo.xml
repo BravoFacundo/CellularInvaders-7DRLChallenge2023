@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{986487A9-2683-E47A-8688-3D0FE6FDB954}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+		</SoundBank>
+		<SoundBank Id="3157003241" Type="User" Language="SFX" Hash="{469DD2D8-C21A-C0AA-2EB8-1C66BBDD23D0}">
+			<ShortName>Test</ShortName>
+			<Path>Test.bnk</Path>
+			<Media>
+				<File Id="723519266" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Test\Drumkit_Loop.wav</ShortName>
+					<CachePath>SFX/Test/Drumkit_Loop_D79FB2B7.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1618884467" Name="Play_Drumkit_Loop" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="723519266"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{9A0ADBFE-0A76-5A43-A31A-0A24DCA827A8}</FileHash>
+</SoundBanksInfo>
