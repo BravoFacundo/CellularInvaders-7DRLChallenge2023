@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID PLAY_DRUMKIT_LOOP = 1618884467U;
         static const AkUniqueID PLAY_TEST_1KHZ = 3862366519U;
+        static const AkUniqueID PLAY_TEST_500HZ = 3791258500U;
     } // namespace EVENTS
 
     namespace BANKS
