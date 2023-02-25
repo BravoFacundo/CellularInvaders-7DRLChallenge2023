@@ -1,6 +1,8 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1618884467	Play_Drumkit_Loop			\Test\Test\Play_Drumkit_Loop	
+	3862366519	Play_Test_1kHz			\Test\Test\Play_Test_1kHz	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	638319349	Test_Beep_1kHz	C:\Users\adria\Documents\WwiseProjects\7DRL Challenge 2023\.cache\Windows\SFX\Test\Test_Beep_1kHz_10C4C929.wem		\Actor-Mixer Hierarchy\Test\Test\Test_Beep_1kHz		12734
 	723519266	Drumkit_Loop	C:\Users\adria\Documents\WwiseProjects\7DRL Challenge 2023\.cache\Windows\SFX\Test\Drumkit_Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Test\Test\Drumkit_Loop		1536096
 

@@ -22,10 +22,14 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3157003241" Type="User" Language="SFX" Hash="{469DD2D8-C21A-C0AA-2EB8-1C66BBDD23D0}">
+		<SoundBank Id="3157003241" Type="User" Language="SFX" Hash="{E32EB14B-E2B1-1BA9-4BAA-55FF97B62E23}">
 			<ShortName>Test</ShortName>
 			<Path>Test.bnk</Path>
 			<Media>
+				<File Id="638319349" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Test\Test_Beep_1kHz.wav</ShortName>
+					<CachePath>SFX/Test/Test_Beep_1kHz_10C4C929.wem</CachePath>
+				</File>
 				<File Id="723519266" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Test\Drumkit_Loop.wav</ShortName>
 					<CachePath>SFX/Test/Drumkit_Loop_D79FB2B7.wem</CachePath>
@@ -37,8 +41,13 @@
 						<MediaRef Id="723519266"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3862366519" Name="Play_Test_1kHz" DurationType="OneShot" DurationMin="0.13164583" DurationMax="0.13164583">
+					<MediaRefs>
+						<MediaRef Id="638319349"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9A0ADBFE-0A76-5A43-A31A-0A24DCA827A8}</FileHash>
+	<FileHash>{885D90F4-871A-E13E-645B-1C85C5B7550B}</FileHash>
 </SoundBanksInfo>

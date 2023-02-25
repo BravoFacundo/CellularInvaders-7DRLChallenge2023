@@ -120,7 +120,7 @@ MonoBehaviour:
     ParentPath: Events\Test
     guid: 0d3db6762978a4449321bfedd091ae13
     GuidInternal: 
-    m_lastTime: -8585242610652221516
+    m_lastTime: -8585242586666509541
     List:
     - name: Play_Drumkit_Loop
       guid: dc42d8741dfad2409ca43250552e8746
@@ -139,6 +139,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: dc42d8741dfad2409ca43250552e8746
       Path: Events\Test\Test\Play_Drumkit_Loop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Test_1kHz
+      guid: fe33e2a32f979e468bc471ff548423b9
+      id: 3862366519
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Test
+        ObjectType: 12
+        guid: 0d3db6762978a4449321bfedd091ae13
+      - ElementName: Test
+        ObjectType: 4
+        guid: e76e9cbb0a489347ae71baa447f6a41e
+      - ElementName: Play_Test_1kHz
+        ObjectType: 3
+        guid: fe33e2a32f979e468bc471ff548423b9
+      Path: Events\Test\Test\Play_Test_1kHz
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -216,7 +236,7 @@ MonoBehaviour:
     m_lastTime: -8585242639182600351
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0600000008000000090000000c0000000e000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000c0000000e000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
