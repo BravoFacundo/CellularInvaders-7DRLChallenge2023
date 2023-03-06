@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 85
   numberOfLifes: 3
-  lifesCircleRadius: 0.5
+  lifesCircleRadius: 0.4
+  lifesCircleRotationSpeed: 90
