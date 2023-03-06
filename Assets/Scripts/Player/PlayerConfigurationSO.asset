@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: PlayerConfigurationSO
   m_EditorClassIdentifier: 
   movementSpeed: 85
+  numberOfLifes: 3
+  lifesCircleRadius: 0.5
