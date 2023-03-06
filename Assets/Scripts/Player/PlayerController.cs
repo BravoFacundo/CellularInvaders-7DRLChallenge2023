@@ -15,6 +15,21 @@ public class PlayerController : MonoBehaviour
         healthComponent = new PlayerHealth(configuration, healtIconPrefab, lifesParentTransform);
     }
 
+    private void OnEnable()
+    {
+        healthComponent.OnReceiveDamage += TakeDamageEvents;
+    }
+
+    private void OnDisable()
+    {
+        healthComponent.OnReceiveDamage -= TakeDamageEvents;
+    }
+
+    private void TakeDamageEvents()
+    {
+
+    }
+
     private void Start()
     {
         healthComponent.Initialize();
