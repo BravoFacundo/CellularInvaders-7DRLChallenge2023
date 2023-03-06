@@ -38,8 +38,48 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: a26c54d6bf9d6947bca8c25094a59526
     GuidInternal: 
-    m_lastTime: -8585242639182890353
+    m_lastTime: -8585235459765619467
     List:
+    - name: AmbienceMaster
+      guid: cc13caf61c3a4c419fb4223aa6523816
+      id: 2611281843
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a26c54d6bf9d6947bca8c25094a59526
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFXMaster
+        ObjectType: 2
+        guid: 8bbadb3c63916b48aa6cdfe2f8751ae8
+      - ElementName: AmbienceMaster
+        ObjectType: 2
+        guid: cc13caf61c3a4c419fb4223aa6523816
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFXMaster\AmbienceMaster
+    - name: FoesMaster
+      guid: c31f46dc881fab448110dc0bcca4b391
+      id: 1836367610
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a26c54d6bf9d6947bca8c25094a59526
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFXMaster
+        ObjectType: 2
+        guid: 8bbadb3c63916b48aa6cdfe2f8751ae8
+      - ElementName: FoesMaster
+        ObjectType: 2
+        guid: c31f46dc881fab448110dc0bcca4b391
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFXMaster\FoesMaster
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -54,6 +94,100 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: MusicMaster
+      guid: 5ebfb24e272654498724c05a6c883e6e
+      id: 3199789248
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a26c54d6bf9d6947bca8c25094a59526
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: MusicMaster
+        ObjectType: 2
+        guid: 5ebfb24e272654498724c05a6c883e6e
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MusicMaster
+    - name: PlayerMaster
+      guid: 74b8c1f700daf54c9e7567002695b1f0
+      id: 3538689948
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a26c54d6bf9d6947bca8c25094a59526
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFXMaster
+        ObjectType: 2
+        guid: 8bbadb3c63916b48aa6cdfe2f8751ae8
+      - ElementName: PlayerMaster
+        ObjectType: 2
+        guid: 74b8c1f700daf54c9e7567002695b1f0
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFXMaster\PlayerMaster
+    - name: ReverbMaster
+      guid: 1c0d3ff738fe424faaf2b208c374d929
+      id: 1686871543
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a26c54d6bf9d6947bca8c25094a59526
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFXMaster
+        ObjectType: 2
+        guid: 8bbadb3c63916b48aa6cdfe2f8751ae8
+      - ElementName: ReverbMaster
+        ObjectType: 1
+        guid: 1c0d3ff738fe424faaf2b208c374d929
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFXMaster\ReverbMaster
+    - name: SFXMaster
+      guid: 8bbadb3c63916b48aa6cdfe2f8751ae8
+      id: 1681633080
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a26c54d6bf9d6947bca8c25094a59526
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFXMaster
+        ObjectType: 2
+        guid: 8bbadb3c63916b48aa6cdfe2f8751ae8
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFXMaster
+    - name: Test
+      guid: 73e58e9d41261848932b60f760565258
+      id: 3157003241
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a26c54d6bf9d6947bca8c25094a59526
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFXMaster
+        ObjectType: 2
+        guid: 8bbadb3c63916b48aa6cdfe2f8751ae8
+      - ElementName: Test
+        ObjectType: 2
+        guid: 73e58e9d41261848932b60f760565258
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFXMaster\Test
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -79,7 +213,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Test
     guid: 6b44e6b2105ed24d8e9bab36fddc9eca
     GuidInternal: 
-    m_lastTime: -8585242610652141525
+    m_lastTime: -8585242367032338328
     List:
     - name: Test
       guid: afcf3059420e4d469d49f23beae99d6a
@@ -96,6 +230,19 @@ MonoBehaviour:
         guid: afcf3059420e4d469d49f23beae99d6a
       Path: SoundBanks\Test\Test
   EventWwu:
+  - PhysicalPath: Events\Ambience.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Ambience
+      ObjectType: 12
+      guid: 4bf86ebdd76ec043a6365c9710c65add
+    ParentPath: Events\Ambience
+    guid: 4bf86ebdd76ec043a6365c9710c65add
+    GuidInternal: 
+    m_lastTime: -8585242321587956221
+    List: []
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
@@ -109,6 +256,32 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585242639182870351
     List: []
+  - PhysicalPath: Events\Foes.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Foes
+      ObjectType: 12
+      guid: 8cfd878c737c1343b393c5855af2637d
+    ParentPath: Events\Foes
+    guid: 8cfd878c737c1343b393c5855af2637d
+    GuidInternal: 
+    m_lastTime: -8585242321076605340
+    List: []
+  - PhysicalPath: Events\Player.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Player
+      ObjectType: 12
+      guid: 43a92d606c35db4ea8634a5101603e18
+    ParentPath: Events\Player
+    guid: 43a92d606c35db4ea8634a5101603e18
+    GuidInternal: 
+    m_lastTime: -8585242377265680197
+    List: []
   - PhysicalPath: Events\Test.wwu
     PathAndIcons:
     - ElementName: Events
@@ -120,11 +293,11 @@ MonoBehaviour:
     ParentPath: Events\Test
     guid: 0d3db6762978a4449321bfedd091ae13
     GuidInternal: 
-    m_lastTime: -8585242586666509541
+    m_lastTime: -8585242360646205156
     List:
-    - name: Play_Drumkit_Loop
-      guid: dc42d8741dfad2409ca43250552e8746
-      id: 1618884467
+    - name: Play_Test_Beep_1kHz
+      guid: f18ad5338830b04a8ae092420e0c20a2
+      id: 4276556170
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -134,17 +307,37 @@ MonoBehaviour:
         guid: 0d3db6762978a4449321bfedd091ae13
       - ElementName: Test
         ObjectType: 4
-        guid: e76e9cbb0a489347ae71baa447f6a41e
-      - ElementName: Play_Drumkit_Loop
+        guid: 77265c8940b18c47addd4e91fec25609
+      - ElementName: Play_Test_Beep_1kHz
         ObjectType: 3
-        guid: dc42d8741dfad2409ca43250552e8746
-      Path: Events\Test\Test\Play_Drumkit_Loop
+        guid: f18ad5338830b04a8ae092420e0c20a2
+      Path: Events\Test\Test\Play_Test_Beep_1kHz
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_Test_1kHz
-      guid: fe33e2a32f979e468bc471ff548423b9
-      id: 3862366519
+    - name: Play_Test_Beep_1kHz_3D
+      guid: 7b0fc7c8c40bde40bd88403d6cdfd524
+      id: 1816661476
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Test
+        ObjectType: 12
+        guid: 0d3db6762978a4449321bfedd091ae13
+      - ElementName: Test_3D
+        ObjectType: 4
+        guid: 966137197f929140b980528a3014781e
+      - ElementName: Play_Test_Beep_1kHz_3D
+        ObjectType: 3
+        guid: 7b0fc7c8c40bde40bd88403d6cdfd524
+      Path: Events\Test\Test_3D\Play_Test_Beep_1kHz_3D
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Test_Beep_500Hz
+      guid: 6cadded93bc29b4698ddeeae8f8f6737
+      id: 676032487
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -154,16 +347,116 @@ MonoBehaviour:
         guid: 0d3db6762978a4449321bfedd091ae13
       - ElementName: Test
         ObjectType: 4
-        guid: e76e9cbb0a489347ae71baa447f6a41e
-      - ElementName: Play_Test_1kHz
+        guid: 77265c8940b18c47addd4e91fec25609
+      - ElementName: Play_Test_Beep_500Hz
         ObjectType: 3
-        guid: fe33e2a32f979e468bc471ff548423b9
-      Path: Events\Test\Test\Play_Test_1kHz
+        guid: 6cadded93bc29b4698ddeeae8f8f6737
+      Path: Events\Test\Test\Play_Test_Beep_500Hz
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Test_Beep_500Hz_3D
+      guid: 9aa44bc9d5c5bb4b8e0a872f6affe09e
+      id: 3602201827
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Test
+        ObjectType: 12
+        guid: 0d3db6762978a4449321bfedd091ae13
+      - ElementName: Test_3D
+        ObjectType: 4
+        guid: 966137197f929140b980528a3014781e
+      - ElementName: Play_Test_Beep_500Hz_3D
+        ObjectType: 3
+        guid: 9aa44bc9d5c5bb4b8e0a872f6affe09e
+      Path: Events\Test\Test_3D\Play_Test_Beep_500Hz_3D
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Test_Drumkit_Loop
+      guid: 3e059aa8386ce24191d97f9e9aae4405
+      id: 16532432
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Test
+        ObjectType: 12
+        guid: 0d3db6762978a4449321bfedd091ae13
+      - ElementName: Test
+        ObjectType: 4
+        guid: 77265c8940b18c47addd4e91fec25609
+      - ElementName: Play_Test_Drumkit_Loop
+        ObjectType: 3
+        guid: 3e059aa8386ce24191d97f9e9aae4405
+      Path: Events\Test\Test\Play_Test_Drumkit_Loop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Test_Drumkit_Loop_3D
+      guid: 242425b6bb785842a0a60b4fbbd91e00
+      id: 613478190
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Test
+        ObjectType: 12
+        guid: 0d3db6762978a4449321bfedd091ae13
+      - ElementName: Test_3D
+        ObjectType: 4
+        guid: 966137197f929140b980528a3014781e
+      - ElementName: Play_Test_Drumkit_Loop_3D
+        ObjectType: 3
+        guid: 242425b6bb785842a0a60b4fbbd91e00
+      Path: Events\Test\Test_3D\Play_Test_Drumkit_Loop_3D
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Test_Drumkit_Loop
+      guid: 6d3de7d8969ff94cb5451b6d18e15b0e
+      id: 3484075926
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Test
+        ObjectType: 12
+        guid: 0d3db6762978a4449321bfedd091ae13
+      - ElementName: Test
+        ObjectType: 4
+        guid: 77265c8940b18c47addd4e91fec25609
+      - ElementName: Stop_Test_Drumkit_Loop
+        ObjectType: 3
+        guid: 6d3de7d8969ff94cb5451b6d18e15b0e
+      Path: Events\Test\Test\Stop_Test_Drumkit_Loop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Test_Drumkit_Loop_3D
+      guid: b9f0ee7c29676840a14fc979368b79c9
+      id: 2503746936
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Test
+        ObjectType: 12
+        guid: 0d3db6762978a4449321bfedd091ae13
+      - ElementName: Test_3D
+        ObjectType: 4
+        guid: 966137197f929140b980528a3014781e
+      - ElementName: Stop_Test_Drumkit_Loop_3D
+        ObjectType: 3
+        guid: b9f0ee7c29676840a14fc979368b79c9
+      Path: Events\Test\Test_3D\Stop_Test_Drumkit_Loop_3D
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
     - name: Test
-      guid: e76e9cbb0a489347ae71baa447f6a41e
+      guid: 77265c8940b18c47addd4e91fec25609
       id: 3157003241
       PathAndIcons:
       - ElementName: Events
@@ -174,8 +467,25 @@ MonoBehaviour:
         guid: 0d3db6762978a4449321bfedd091ae13
       - ElementName: Test
         ObjectType: 4
-        guid: e76e9cbb0a489347ae71baa447f6a41e
+        guid: 77265c8940b18c47addd4e91fec25609
       Path: Events\Test\Test
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Test_3D
+      guid: 966137197f929140b980528a3014781e
+      id: 3070809273
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Test
+        ObjectType: 12
+        guid: 0d3db6762978a4449321bfedd091ae13
+      - ElementName: Test_3D
+        ObjectType: 4
+        guid: 966137197f929140b980528a3014781e
+      Path: Events\Test\Test_3D
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -191,8 +501,78 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 6285537c90ab744b9be94a540713fb11
     GuidInternal: 
-    m_lastTime: -8585242639182770352
-    List: []
+    m_lastTime: -8585235471351341586
+    List:
+    - name: RTPC_Distance
+      guid: 216f9038a536864785a4b69395327d8c
+      id: 262290038
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6285537c90ab744b9be94a540713fb11
+      - ElementName: RTPC_Distance
+        ObjectType: 13
+        guid: 216f9038a536864785a4b69395327d8c
+      Path: Game Parameters\Default Work Unit\RTPC_Distance
+    - name: RTPC_MasterVolume
+      guid: 14809a476549ab48876deb4616247f17
+      id: 2582501215
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6285537c90ab744b9be94a540713fb11
+      - ElementName: RTPC_MasterVolume
+        ObjectType: 13
+        guid: 14809a476549ab48876deb4616247f17
+      Path: Game Parameters\Default Work Unit\RTPC_MasterVolume
+    - name: RTPC_MusicVolume
+      guid: 2bfeac7d7ac44241a8f748d9035fb514
+      id: 2378823330
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6285537c90ab744b9be94a540713fb11
+      - ElementName: RTPC_MusicVolume
+        ObjectType: 13
+        guid: 2bfeac7d7ac44241a8f748d9035fb514
+      Path: Game Parameters\Default Work Unit\RTPC_MusicVolume
+    - name: RTPC_PlayerLife
+      guid: b20201dabd2cf54fbacd2e932f7420cb
+      id: 4105377574
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6285537c90ab744b9be94a540713fb11
+      - ElementName: RTPC_PlayerLife
+        ObjectType: 13
+        guid: b20201dabd2cf54fbacd2e932f7420cb
+      Path: Game Parameters\Default Work Unit\RTPC_PlayerLife
+    - name: RTPC_SFXVolume
+      guid: 812818c621c97146883786f416f986a2
+      id: 2644490154
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6285537c90ab744b9be94a540713fb11
+      - ElementName: RTPC_SFXVolume
+        ObjectType: 13
+        guid: 812818c621c97146883786f416f986a2
+      Path: Game Parameters\Default Work Unit\RTPC_SFXVolume
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -205,8 +585,206 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: b391551e51b4a6419909a5ea277c48b4
     GuidInternal: 
-    m_lastTime: -8585242639182800354
-    List: []
+    m_lastTime: -8585235460627035465
+    List:
+    - name: GameStatus
+      guid: dcaad83ba35afa4fb66921b25ea36940
+      id: 1045871717
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b391551e51b4a6419909a5ea277c48b4
+      - ElementName: GameStatus
+        ObjectType: 9
+        guid: dcaad83ba35afa4fb66921b25ea36940
+      Path: States\Default Work Unit\GameStatus
+      values:
+      - name: InGame
+        guid: d45e2d970bcf874cb8d89f191c145b5c
+        id: 984691642
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b391551e51b4a6419909a5ea277c48b4
+        - ElementName: GameStatus
+          ObjectType: 9
+          guid: dcaad83ba35afa4fb66921b25ea36940
+        - ElementName: InGame
+          ObjectType: 8
+          guid: d45e2d970bcf874cb8d89f191c145b5c
+      - name: InMenu
+        guid: 17023612fd453c4ba37d3e9100093bf1
+        id: 3374585465
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b391551e51b4a6419909a5ea277c48b4
+        - ElementName: GameStatus
+          ObjectType: 9
+          guid: dcaad83ba35afa4fb66921b25ea36940
+        - ElementName: InMenu
+          ObjectType: 8
+          guid: 17023612fd453c4ba37d3e9100093bf1
+      - name: None
+        guid: c3dc68b949a66443971a06da5adaa1ae
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b391551e51b4a6419909a5ea277c48b4
+        - ElementName: GameStatus
+          ObjectType: 9
+          guid: dcaad83ba35afa4fb66921b25ea36940
+        - ElementName: None
+          ObjectType: 8
+          guid: c3dc68b949a66443971a06da5adaa1ae
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Position
+      guid: 04b0aee20244b24dacb28e23891e14ec
+      id: 1578750580
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b391551e51b4a6419909a5ea277c48b4
+      - ElementName: Position
+        ObjectType: 9
+        guid: 04b0aee20244b24dacb28e23891e14ec
+      Path: States\Default Work Unit\Position
+      values:
+      - name: IsCrossing
+        guid: 8e7c131360c5464b8ec505aecd57ba69
+        id: 3620838037
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b391551e51b4a6419909a5ea277c48b4
+        - ElementName: Position
+          ObjectType: 9
+          guid: 04b0aee20244b24dacb28e23891e14ec
+        - ElementName: IsCrossing
+          ObjectType: 8
+          guid: 8e7c131360c5464b8ec505aecd57ba69
+      - name: IsInRoom
+        guid: df136d66976ccc42aea930be6da04967
+        id: 2851713889
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b391551e51b4a6419909a5ea277c48b4
+        - ElementName: Position
+          ObjectType: 9
+          guid: 04b0aee20244b24dacb28e23891e14ec
+        - ElementName: IsInRoom
+          ObjectType: 8
+          guid: df136d66976ccc42aea930be6da04967
+      - name: None
+        guid: 27a261cda7455541af0b757ff0a52ab5
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b391551e51b4a6419909a5ea277c48b4
+        - ElementName: Position
+          ObjectType: 9
+          guid: 04b0aee20244b24dacb28e23891e14ec
+        - ElementName: None
+          ObjectType: 8
+          guid: 27a261cda7455541af0b757ff0a52ab5
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: RoomType
+      guid: 9f9068c05abf5a43bb2077dd8a948fa5
+      id: 1992536912
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b391551e51b4a6419909a5ea277c48b4
+      - ElementName: RoomType
+        ObjectType: 9
+        guid: 9f9068c05abf5a43bb2077dd8a948fa5
+      Path: States\Default Work Unit\RoomType
+      values:
+      - name: InDangerousRoom
+        guid: a4463595075cfb4d8a703314e0d73039
+        id: 3385864285
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b391551e51b4a6419909a5ea277c48b4
+        - ElementName: RoomType
+          ObjectType: 9
+          guid: 9f9068c05abf5a43bb2077dd8a948fa5
+        - ElementName: InDangerousRoom
+          ObjectType: 8
+          guid: a4463595075cfb4d8a703314e0d73039
+      - name: InQuietRoom
+        guid: c91f3fc7f575934d8eee8870940eabff
+        id: 3819053597
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b391551e51b4a6419909a5ea277c48b4
+        - ElementName: RoomType
+          ObjectType: 9
+          guid: 9f9068c05abf5a43bb2077dd8a948fa5
+        - ElementName: InQuietRoom
+          ObjectType: 8
+          guid: c91f3fc7f575934d8eee8870940eabff
+      - name: None
+        guid: f2e344e441484a45b7f04e61c2798d9b
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b391551e51b4a6419909a5ea277c48b4
+        - ElementName: RoomType
+          ObjectType: 9
+          guid: 9f9068c05abf5a43bb2077dd8a948fa5
+        - ElementName: None
+          ObjectType: 8
+          guid: f2e344e441484a45b7f04e61c2798d9b
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -219,8 +797,90 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 5f3876fc1d5e194c8e56772e69574950
     GuidInternal: 
-    m_lastTime: -8585242639182840353
-    List: []
+    m_lastTime: -8585235473113531473
+    List:
+    - name: PlayerHealth
+      guid: 62619978c128d44892926e46ae8fb2fd
+      id: 151362964
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5f3876fc1d5e194c8e56772e69574950
+      - ElementName: PlayerHealth
+        ObjectType: 11
+        guid: 62619978c128d44892926e46ae8fb2fd
+      Path: Switches\Default Work Unit\PlayerHealth
+      values:
+      - name: Death
+        guid: 9ce3eb67e2aee44dade526d95f6a37bc
+        id: 779278001
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 5f3876fc1d5e194c8e56772e69574950
+        - ElementName: PlayerHealth
+          ObjectType: 11
+          guid: 62619978c128d44892926e46ae8fb2fd
+        - ElementName: Death
+          ObjectType: 10
+          guid: 9ce3eb67e2aee44dade526d95f6a37bc
+      - name: FullHealth
+        guid: 0265b9ed9d9278428568906c164e5f36
+        id: 2429688720
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 5f3876fc1d5e194c8e56772e69574950
+        - ElementName: PlayerHealth
+          ObjectType: 11
+          guid: 62619978c128d44892926e46ae8fb2fd
+        - ElementName: FullHealth
+          ObjectType: 10
+          guid: 0265b9ed9d9278428568906c164e5f36
+      - name: LowHealth
+        guid: 9ed6b611b47de54ca25bb77989752205
+        id: 1017222595
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 5f3876fc1d5e194c8e56772e69574950
+        - ElementName: PlayerHealth
+          ObjectType: 11
+          guid: 62619978c128d44892926e46ae8fb2fd
+        - ElementName: LowHealth
+          ObjectType: 10
+          guid: 9ed6b611b47de54ca25bb77989752205
+      - name: NearDeath
+        guid: e90a65edac358140b2aa2317fd3ecb5e
+        id: 898449699
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 5f3876fc1d5e194c8e56772e69574950
+        - ElementName: PlayerHealth
+          ObjectType: 11
+          guid: 62619978c128d44892926e46ae8fb2fd
+        - ElementName: NearDeath
+          ObjectType: 10
+          guid: e90a65edac358140b2aa2317fd3ecb5e
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -236,7 +896,7 @@ MonoBehaviour:
     m_lastTime: -8585242639182600351
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000c0000000e000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000c0000000e0000001200000014000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
