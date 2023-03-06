@@ -11,6 +11,11 @@ public class PlayerHealth
     private readonly List<GameObject> activeLifeIcons;
     private readonly List<GameObject> inactiveLifeIcons;
 
+    public int GetLifesLeft()
+    {
+        return activeLifeIcons.Count;
+    }
+
     public PlayerHealth(PlayerConfigurationSO playerConfiguration, GameObject healthIconPrefab, Transform lifesParentTransform)
     {
         this.playerConfiguration = playerConfiguration;

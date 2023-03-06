@@ -4,6 +4,8 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private PlayerConfigurationSO configuration;
     private PlayerMovement movementComponent;
+    [SerializeField] private Transform ghostTransform;
+    private Rigidbody2D rigidbody2D;
 
     [SerializeField] private GameObject healtIconPrefab;
     [SerializeField] private Transform lifesParentTransform;
@@ -11,7 +13,8 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        movementComponent = new PlayerMovement(transform, configuration);
+        rigidbody2D = GetComponent<Rigidbody2D>();
+        movementComponent = new PlayerMovement(ghostTransform, configuration);
         healthComponent = new PlayerHealth(configuration, healtIconPrefab, lifesParentTransform);
     }
 
@@ -27,7 +30,7 @@ public class PlayerController : MonoBehaviour
 
     private void TakeDamageEvents()
     {
-
+        AkSoundEngine.SetRTPCValue("RTPC_PlayerLife", healthComponent.GetLifesLeft());
     }
 
     private void Start()
@@ -44,5 +47,11 @@ public class PlayerController : MonoBehaviour
 
         movementComponent.Update();
         healthComponent.Update();
+    }
+
+    private void FixedUpdate()
+    {
+        rigidbody2D.MovePosition(ghostTransform.position);
+        ghostTransform.position = transform.position;
     }
 }
