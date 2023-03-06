@@ -1,5 +1,44 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	151362964	PlayerHealth			\Default Work Unit\PlayerHealth	
+
+Switch	ID	Name	Switch Group			Notes
+	779278001	Death	PlayerHealth			
+	898449699	NearDeath	PlayerHealth			
+	1017222595	LowHealth	PlayerHealth			
+	2429688720	FullHealth	PlayerHealth			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1045871717	GameStatus			\Default Work Unit\GameStatus	
+	1578750580	Position			\Default Work Unit\Position	
+	1992536912	RoomType			\Default Work Unit\RoomType	
+
+State	ID	Name	State Group			Notes
+	748895195	None	GameStatus			
+	984691642	InGame	GameStatus			
+	3374585465	InMenu	GameStatus			
+	748895195	None	Position			
+	2851713889	IsInRoom	Position			
+	3620838037	IsCrossing	Position			
+	748895195	None	RoomType			
+	3385864285	InDangerousRoom	RoomType			
+	3819053597	InQuietRoom	RoomType			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2378823330	RTPC_MusicVolume			\Default Work Unit\RTPC_MusicVolume	
+	2582501215	RTPC_MasterVolume			\Default Work Unit\RTPC_MasterVolume	
+	2644490154	RTPC_SFXVolume			\Default Work Unit\RTPC_SFXVolume	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	1681633080	SFXMaster			\Default Work Unit\Master Audio Bus\SFXMaster	
+	1836367610	FoesMaster			\Default Work Unit\Master Audio Bus\SFXMaster\FoesMaster	
+	2611281843	AmbienceMaster			\Default Work Unit\Master Audio Bus\SFXMaster\AmbienceMaster	
+	3157003241	Test			\Default Work Unit\Master Audio Bus\SFXMaster\Test	
+	3199789248	MusicMaster			\Default Work Unit\Master Audio Bus\MusicMaster	
+	3538689948	PlayerMaster			\Default Work Unit\Master Audio Bus\SFXMaster\PlayerMaster	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	1686871543	ReverbMaster			\Default Work Unit\Master Audio Bus\SFXMaster\ReverbMaster	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

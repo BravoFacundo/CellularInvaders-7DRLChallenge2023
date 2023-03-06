@@ -1,10 +1,15 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1618884467	Play_Drumkit_Loop			\Test\Test\Play_Drumkit_Loop	
-	3791258500	Play_Test_500Hz			\Test\Test\Play_Test_500Hz	
-	3862366519	Play_Test_1kHz			\Test\Test\Play_Test_1kHz	
+	16532432	Play_Test_Drumkit_Loop			\Test\Test\Play_Test_Drumkit_Loop	
+	613478190	Play_Test_Drumkit_Loop_3D			\Test\Test_3D\Play_Test_Drumkit_Loop_3D	
+	676032487	Play_Test_Beep_500Hz			\Test\Test\Play_Test_Beep_500Hz	
+	1816661476	Play_Test_Beep_1kHz_3D			\Test\Test_3D\Play_Test_Beep_1kHz_3D	
+	2503746936	Stop_Test_Drumkit_Loop_3D			\Test\Test_3D\Stop_Test_Drumkit_Loop_3D	
+	3484075926	Stop_Test_Drumkit_Loop			\Test\Test\Stop_Test_Drumkit_Loop	
+	3602201827	Play_Test_Beep_500Hz_3D			\Test\Test_3D\Play_Test_Beep_500Hz_3D	
+	4276556170	Play_Test_Beep_1kHz			\Test\Test\Play_Test_Beep_1kHz	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	638319349	Test_Beep_1kHz	C:\Users\adria\Documents\WwiseProjects\7DRL Challenge 2023\.cache\Windows\SFX\Test\Test_Beep_1kHz_10C4C929.wem		\Actor-Mixer Hierarchy\Test\Test\Test_Beep_1kHz		12734
-	723519266	Drumkit_Loop	C:\Users\adria\Documents\WwiseProjects\7DRL Challenge 2023\.cache\Windows\SFX\Test\Drumkit_Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Test\Test\Drumkit_Loop		1536096
-	797743916	Test_Beep_500Hz	C:\Users\adria\Documents\WwiseProjects\7DRL Challenge 2023\.cache\Windows\SFX\Test\Test_Beep_500Hz_10C4C929.wem		\Actor-Mixer Hierarchy\Test\Test\Test_Beep_500Hz		11692
+	638319349	Test_Beep_1kHz_3D	C:\Users\adria\Documents\WwiseProjects\7DRL Challenge 2023\.cache\Windows\SFX\Test\Test_Beep_1kHz_10C4C929.wem		\Actor-Mixer Hierarchy\Test\Test\Test\Test_3D\Test_Beep_1kHz_3D		12734
+	723519266	Test_Drumkit_Loop_3D	C:\Users\adria\Documents\WwiseProjects\7DRL Challenge 2023\.cache\Windows\SFX\Test\Drumkit_Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Test\Test\Test\Test_3D\Test_Drumkit_Loop_3D		1536096
+	797743916	Test_Beep_500Hz_3D	C:\Users\adria\Documents\WwiseProjects\7DRL Challenge 2023\.cache\Windows\SFX\Test\Test_Beep_500Hz_10C4C929.wem		\Actor-Mixer Hierarchy\Test\Test\Test\Test_3D\Test_Beep_500Hz_3D		11692
 
