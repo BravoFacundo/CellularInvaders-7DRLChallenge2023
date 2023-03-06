@@ -1,8 +1,10 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerHealth
 {
+    public event Action OnReceiveDamage;
     private readonly PlayerConfigurationSO playerConfiguration;
     private readonly GameObject healthIconPrefab;
     private readonly Transform lifesParentTransform;
@@ -57,6 +59,8 @@ public class PlayerHealth
             {
                 DeactivateOneLifeIcon();
             }
+
+            OnReceiveDamage?.Invoke();
         }
     }
 
