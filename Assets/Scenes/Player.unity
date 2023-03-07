@@ -1161,17 +1161,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Core
       objectReference: {fileID: 0}
+    - target: {fileID: 60479987364956380, guid: b0c50c8f2533d144d951f55f0179f1bf, type: 3}
+      propertyPath: coinPrefab
+      value: 
+      objectReference: {fileID: 1231170882898480164, guid: bac641bcc9d60eb46a3a3eb3083bf4db, type: 3}
     - target: {fileID: 60479987364956381, guid: b0c50c8f2533d144d951f55f0179f1bf, type: 3}
       propertyPath: m_RootOrder
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 60479987364956381, guid: b0c50c8f2533d144d951f55f0179f1bf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.57
+      value: 1.23
       objectReference: {fileID: 0}
     - target: {fileID: 60479987364956381, guid: b0c50c8f2533d144d951f55f0179f1bf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.07
+      value: 1.23
       objectReference: {fileID: 0}
     - target: {fileID: 60479987364956381, guid: b0c50c8f2533d144d951f55f0179f1bf, type: 3}
       propertyPath: m_LocalPosition.z

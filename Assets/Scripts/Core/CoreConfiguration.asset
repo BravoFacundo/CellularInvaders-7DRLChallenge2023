@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c9eb742c3fdab746ad6f8c023457da6, type: 3}
   m_Name: CoreConfiguration
   m_EditorClassIdentifier: 
-  numberOfCoins: 1
+  numberOfCoins: 5
   powerUpProbability: 30
   explosionDelay: 2
+  explosionForce: 10
