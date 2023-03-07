@@ -9,4 +9,6 @@ public class CoreConfigurationSO : ScriptableObject
     public int PowerUpProbability => powerUpProbability;
     [SerializeField] private float explosionDelay = 1.5f;
     public float ExplosionDelay => explosionDelay;
+    [SerializeField] private float explosionForce = 10f;
+    public float ExplosionForce => explosionForce;
 }
