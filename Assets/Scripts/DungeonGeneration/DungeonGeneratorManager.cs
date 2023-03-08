@@ -1,10 +1,19 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
-using UnityEngine.UIElements;
+using Random = UnityEngine.Random;
 
 public enum GenerationMethod
 {
     Fixed, Random
+}
+
+[Serializable]
+public class RoomProbability
+{
+    [SerializeField] public RoomType RoomType;
+    [SerializeField] [Range(0, 100)] public float Probability;
 }
 
 public class DungeonGeneratorManager : MonoBehaviour
@@ -20,11 +29,17 @@ public class DungeonGeneratorManager : MonoBehaviour
     [SerializeField] private int _randomRoomAmountUpperBound = 10;
 
     [SerializeField] private RoomBehaviour _roomBehaviour;
+    [SerializeField] [Range(0, 100)] private float _shopProbability = 10f;
+    [SerializeField] private List<RoomProbability> _roomProbabilities = new List<RoomProbability>();
+    private float _accumulatedProbability = 0.0f;
 
     [Header("Generated Rooms Data")]
     private Vector2Int _currentRoomGenerated = Vector2Int.zero;
     [SerializeField] private List<Vector2Int> _roomPositions = new List<Vector2Int>();
     [SerializeField] private List<RoomInfo> _roomInfos = new List<RoomInfo>();
+
+    [SerializeField] private bool _allowShopSpawn = true;
+    private bool _shopSpawned = false;
 
 
     #endregion
@@ -32,6 +47,9 @@ public class DungeonGeneratorManager : MonoBehaviour
     #region MonoBehaviour
     private void Start()
     {
+        foreach (var probability in _roomProbabilities.Select(e => e.Probability))
+            _accumulatedProbability += probability;
+
         GenerateDungeon();
     }
 
@@ -66,7 +84,7 @@ public class DungeonGeneratorManager : MonoBehaviour
                 var roomInfo = ScriptableObject.CreateInstance<RoomInfo>();
                 roomInfo.GridPosition = _currentRoomGenerated;
                 roomInfo.RoomSize = _roomBehaviour.RoomSize;
-                //roomInfo.RoomSize = new Vector2(5.5f, 5.5f);
+                roomInfo.RoomType = SelectRandomRoomType(roomsCreated, roomsToCreate);
                 roomInfo.WorldPosition = roomInfo.GridPosition * roomInfo.RoomSize;
                 _roomInfos.Add(roomInfo);
 
@@ -99,8 +117,44 @@ public class DungeonGeneratorManager : MonoBehaviour
             var room = Instantiate(_roomBehaviour, roomInfo.WorldPosition, Quaternion.identity);
             room.RoomInfo = roomInfo;
             room.SpawnWalls();
+            room.SetupRoom();
             Debug.Log("Instantiated room: " + roomInfo.RoomType);
         }
     }
-#endregion
+
+    private RoomType SelectRandomRoomType(int roomsCreated, int roomsToCreate)
+    {
+        RoomType SelectAnotherRoomTypeLeft()
+        {
+            if (!_shopSpawned && _allowShopSpawn)
+            {
+                float rndShop = Random.value;
+                if (rndShop <= _shopProbability / 100f) // Shop probability ranges from 0 to 100
+                {
+                    _shopSpawned = true;
+                    return RoomType.Shop;
+                }
+            }
+            
+            float rnd = Random.Range(0.0f, _accumulatedProbability);
+            float accum = 0f;
+            foreach (var element in _roomProbabilities)
+            {
+                if (rnd < accum + element.Probability)
+                    return element.RoomType;
+                else
+                    accum += element.Probability;
+            }
+
+            Debug.LogWarning("Selecting an empty room type. This should not happen and may indicate probabilities are wrong");
+            return RoomType.Empty;
+        }
+
+        if (roomsCreated == 0) return RoomType.Spawn;
+        else if (roomsCreated == roomsToCreate - 1) return RoomType.EliteEnemies;
+        else return SelectAnotherRoomTypeLeft();
+    }
+
+
+    #endregion
 }

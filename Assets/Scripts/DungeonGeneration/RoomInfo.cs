@@ -4,7 +4,7 @@ using UnityEngine;
 
 public enum RoomType
 {
-    Empty, Spawn, Shop, EasyEnemies, MediumEnemies, HardEnemies
+    Empty, Spawn, Shop, EasyEnemies, MediumEnemies, HardEnemies, EliteEnemies
 }
 
 [Flags]

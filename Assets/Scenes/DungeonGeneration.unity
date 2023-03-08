@@ -238,8 +238,19 @@ MonoBehaviour:
   _randomRoomAmountLowerBound: 5
   _randomRoomAmountUpperBound: 10
   _roomBehaviour: {fileID: 4372982539813284436, guid: def7f71aa5fa9d34ca0da5bcbc2f7262, type: 3}
+  _shopProbability: 10
+  _roomProbabilities:
+  - RoomType: 0
+    Probability: 0
+  - RoomType: 3
+    Probability: 50
+  - RoomType: 4
+    Probability: 35
+  - RoomType: 5
+    Probability: 15
   _roomPositions: []
   _roomInfos: []
+  _allowShopSpawn: 1
 --- !u!4 &1033345052
 Transform:
   m_ObjectHideFlags: 0
