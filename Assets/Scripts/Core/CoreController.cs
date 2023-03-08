@@ -22,7 +22,7 @@ public class CoreController : MonoBehaviour
     {
         Debug.Log("It is going to explode...");
         isAboutToExplode = true;
-        coreSpriteRenderer.color = Color.black;
+        coreSpriteRenderer.color = Color.red;
         yield return new WaitForSeconds(configuration.ExplosionDelay);
         Explode();
     }
@@ -33,6 +33,20 @@ public class CoreController : MonoBehaviour
         explosionParticleSystem.Play();
         coreSpriteRenderer.enabled = false;
         SpawnObjects();
+        ApplyExplosionDamage();
+    }
+
+    private void ApplyExplosionDamage()
+    {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, configuration.ExplosionRadius);
+
+        for (int i = 0; i < colliders.Length; i++)
+        {
+            if(colliders[i].tag.CompareTo("Player") == 0)
+            {
+                colliders[i].gameObject.GetComponent<IDamageable>().TakeDamage(configuration.ExplosionDamage);
+            }
+        }
     }
 
     private void SpawnObjects()

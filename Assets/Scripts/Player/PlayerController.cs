@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, IDamageable
 {
     [SerializeField] private PlayerConfigurationSO configuration;
     private PlayerMovement movementComponent;
@@ -90,5 +90,10 @@ public class PlayerController : MonoBehaviour
     {
         rigidbody2D.MovePosition(ghostTransform.position);
         ghostTransform.position = transform.position;
+    }
+
+    public void TakeDamage(int damage)
+    {
+        healthComponent.TakeDamage(damage);
     }
 }
