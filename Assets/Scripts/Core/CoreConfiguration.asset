@@ -16,3 +16,5 @@ MonoBehaviour:
   powerUpProbability: 30
   explosionDelay: 2
   explosionForce: 10
+  explosionRadius: 1
+  explosionDamage: 1

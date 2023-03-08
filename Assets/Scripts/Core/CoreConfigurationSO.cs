@@ -11,4 +11,8 @@ public class CoreConfigurationSO : ScriptableObject
     public float ExplosionDelay => explosionDelay;
     [SerializeField] private float explosionForce = 10f;
     public float ExplosionForce => explosionForce;
+    [SerializeField] private float explosionRadius;
+    public float ExplosionRadius => explosionRadius;
+    [SerializeField] private int explosionDamage = 1;
+    public int ExplosionDamage => explosionDamage;
 }
