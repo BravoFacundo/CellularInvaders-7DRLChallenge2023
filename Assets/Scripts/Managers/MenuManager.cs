@@ -21,9 +21,14 @@ public class MenuManager : MonoBehaviour
         AkSoundEngine.PostEvent(buttonClickSFX, gameObject);
     }
 
-    public void OnMouseHover()
+    public void OnMouseHover(GameObject textObj)
     {
         AkSoundEngine.PostEvent(buttonHoverSFX, gameObject);
+        textObj.GetComponent<TMP_Text>().outlineWidth = 0.3f;
+    }
+    public void OnMouseHoverExit(GameObject textObj)
+    {
+        textObj.GetComponent<TMP_Text>().outlineWidth = 0.2f;
     }
 
     public void OnGameStart()
