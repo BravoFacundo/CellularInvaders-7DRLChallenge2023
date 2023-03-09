@@ -124,7 +124,7 @@
 				<Event Id="2503746936" Name="Stop_Test_Drumkit_Loop_3D" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{E2ECF778-556E-5D54-F861-609934E79AFD}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{ECAA752A-B6F6-6738-0A00-FDFE9FAA2339}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -176,5 +176,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BD142EBB-1EF9-EEBF-8661-1252921B376F}</FileHash>
+	<FileHash>{8C46DD56-7081-65F0-D5A8-6B81789E308F}</FileHash>
 </SoundBanksInfo>
