@@ -1,0 +1,37 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2837384057	Stop_Music			\Music\Music\Stop_Music	
+	2932040671	Play_Music			\Music\Music\Play_Music	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	151362964	PlayerHealth			\Default Work Unit\PlayerHealth	
+
+Switch	ID	Name	Switch Group			Notes
+	779278001	Death	PlayerHealth			
+	898449699	NearDeath	PlayerHealth			
+	1017222595	LowHealth	PlayerHealth			
+	2429688720	FullHealth	PlayerHealth			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1045871717	GameStatus			\Default Work Unit\GameStatus	
+	1992536912	RoomType			\Default Work Unit\RoomType	
+
+State	ID	Name	State Group			Notes
+	748895195	None	GameStatus			
+	984691642	InGame	GameStatus			
+	3374585465	InMenu	GameStatus			
+	748895195	None	RoomType			
+	3385864285	InDangerousRoom	RoomType			
+	3819053597	InQuietRoom	RoomType			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	4105377574	RTPC_PlayerLife			\Default Work Unit\RTPC_PlayerLife	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	105536463	7DLR Challenge Music - Menu Intro - v1	C:\Users\adria\Documents\WwiseProjects\7DRL Challenge 2023\.cache\Windows\SFX\Music\Menu Theme\7DLR Challenge Music - Menu Intro - v1_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Music\Music\Music_Menu\Music_Menu_Intro\7DLR Challenge Music - Menu Intro - v1		2525028
+	335416276	7DLR Challenge Music - Menu A1 - v1	C:\Users\adria\Documents\WwiseProjects\7DRL Challenge 2023\.cache\Windows\SFX\Music\Menu Theme\7DLR Challenge Music - Menu A2 - v1_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Music\Music\Music_Menu\Music_Menu_A\7DLR Challenge Music - Menu A1 - v1		6628040
+	363933681	7DLR Challenge Music - Menu A1 - v1	C:\Users\adria\Documents\WwiseProjects\7DRL Challenge 2023\.cache\Windows\SFX\Music\Menu Theme\7DLR Challenge Music - Menu A3 - v1_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Music\Music\Music_Menu\Music_Menu_A\7DLR Challenge Music - Menu A1 - v1		6628040
+	726965583	7DLR Challenge Music - Menu B1 - v1	C:\Users\adria\Documents\WwiseProjects\7DRL Challenge 2023\.cache\Windows\SFX\Music\Menu Theme\7DLR Challenge Music - Menu B2 - v1_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Music\Music\Music_Menu\Music_Menu_B\7DLR Challenge Music - Menu B1 - v1		6628040
+	728141341	7DLR Challenge Music - Menu A1 - v1	C:\Users\adria\Documents\WwiseProjects\7DRL Challenge 2023\.cache\Windows\SFX\Music\Menu Theme\7DLR Challenge Music - Menu A1 - v1_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Music\Music\Music_Menu\Music_Menu_A\7DLR Challenge Music - Menu A1 - v1		6628040
+	856125103	7DLR Challenge Music - Menu B1 - v1	C:\Users\adria\Documents\WwiseProjects\7DRL Challenge 2023\.cache\Windows\SFX\Music\Menu Theme\7DLR Challenge Music - Menu B1 - v1_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Music\Music\Music_Menu\Music_Menu_B\7DLR Challenge Music - Menu B1 - v1		6628040
+	1009411052	7DLR Challenge Music - Menu B1 - v1	C:\Users\adria\Documents\WwiseProjects\7DRL Challenge 2023\.cache\Windows\SFX\Music\Menu Theme\7DLR Challenge Music - Menu B3 - v1_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Music\Music\Music_Menu\Music_Menu_B\7DLR Challenge Music - Menu B1 - v1		6628040
+

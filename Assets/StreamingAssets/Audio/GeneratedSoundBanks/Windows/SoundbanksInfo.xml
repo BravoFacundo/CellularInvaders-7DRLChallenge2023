@@ -124,6 +124,57 @@
 				<Event Id="2503746936" Name="Stop_Test_Drumkit_Loop_3D" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{E2ECF778-556E-5D54-F861-609934E79AFD}">
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<Media>
+				<File Id="105536463" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\Menu Theme\7DLR Challenge Music - Menu Intro - v1.wav</ShortName>
+					<CachePath>SFX/Music/Menu Theme/7DLR Challenge Music - Menu Intro - v1_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="335416276" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\Menu Theme\7DLR Challenge Music - Menu A2 - v1.wav</ShortName>
+					<CachePath>SFX/Music/Menu Theme/7DLR Challenge Music - Menu A2 - v1_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="363933681" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\Menu Theme\7DLR Challenge Music - Menu A3 - v1.wav</ShortName>
+					<CachePath>SFX/Music/Menu Theme/7DLR Challenge Music - Menu A3 - v1_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="726965583" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\Menu Theme\7DLR Challenge Music - Menu B2 - v1.wav</ShortName>
+					<CachePath>SFX/Music/Menu Theme/7DLR Challenge Music - Menu B2 - v1_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="728141341" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\Menu Theme\7DLR Challenge Music - Menu A1 - v1.wav</ShortName>
+					<CachePath>SFX/Music/Menu Theme/7DLR Challenge Music - Menu A1 - v1_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="856125103" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\Menu Theme\7DLR Challenge Music - Menu B1 - v1.wav</ShortName>
+					<CachePath>SFX/Music/Menu Theme/7DLR Challenge Music - Menu B1 - v1_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="1009411052" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\Menu Theme\7DLR Challenge Music - Menu B3 - v1.wav</ShortName>
+					<CachePath>SFX/Music/Menu Theme/7DLR Challenge Music - Menu B3 - v1_D79FB2B7.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2932040671" Name="Play_Music" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="105536463"/>
+						<MediaRef Id="335416276"/>
+						<MediaRef Id="363933681"/>
+						<MediaRef Id="726965583"/>
+						<MediaRef Id="728141341"/>
+						<MediaRef Id="856125103"/>
+						<MediaRef Id="1009411052"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2837384057" Name="Stop_Music" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="4105377574" Name="RTPC_PlayerLife"/>
+			</GameParameters>
+		</SoundBank>
 	</SoundBanks>
-	<FileHash>{24D7C743-3B9F-970C-3BDB-671822474026}</FileHash>
+	<FileHash>{BD142EBB-1EF9-EEBF-8661-1252921B376F}</FileHash>
 </SoundBanksInfo>
