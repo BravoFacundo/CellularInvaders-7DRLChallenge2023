@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d36db94e0ccfc147b688a8e5ad8b1e5, type: 3}
   m_Name: PlayerConfigurationSO
   m_EditorClassIdentifier: 
-  movementSpeed: 85
+  movementSpeed: 76
   numberOfLifes: 3
   lifesCircleRadius: 0.4
   lifesCircleRotationSpeed: 90

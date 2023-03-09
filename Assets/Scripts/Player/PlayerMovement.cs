@@ -4,6 +4,7 @@ public class PlayerMovement
 {
     private readonly PlayerConfigurationSO playerConfiguration;
     private readonly Transform playerTransform;
+    private float movementSpeedMultiplier = 1f;
 
     public PlayerMovement(Transform playerTransform, PlayerConfigurationSO playerConfiguration)
     {
@@ -18,6 +19,11 @@ public class PlayerMovement
         playerTransform.position = interpolatedPosition;
     }
 
+    public void SetMovementSpeedMultiplier(float newValue)
+    {
+        movementSpeedMultiplier = newValue;
+    }
+
     private Vector2 CalculateMousePositionInWorldSpace()
     {
         Vector2 mouseScreenPosition = Input.mousePosition;
@@ -28,6 +34,6 @@ public class PlayerMovement
     private Vector2 CalculateInterpolatedPosition(Vector2 mouseWorldPosition)
     {
         Vector2 velocity = Vector2.zero;
-        return Vector2.SmoothDamp(playerTransform.position, mouseWorldPosition, ref velocity, Time.deltaTime * playerConfiguration.MovementSpeed);
+        return Vector2.SmoothDamp(playerTransform.position, mouseWorldPosition, ref velocity, Time.deltaTime * playerConfiguration.MovementSpeed * movementSpeedMultiplier);
     }
 }
