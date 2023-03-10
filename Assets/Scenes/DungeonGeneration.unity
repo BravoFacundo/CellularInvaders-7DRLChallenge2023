@@ -123,6 +123,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &50676370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 50676371}
+  m_Layer: 0
+  m_Name: Environment
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &50676371
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50676370}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &213883782
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,11 +264,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6831fb838dd7c54dbd5bc96895b88e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _environment: {fileID: 50676371}
   _generationMethod: 0
   _fixedRoomAmount: 8
   _randomRoomAmountLowerBound: 5
   _randomRoomAmountUpperBound: 10
-  _roomBehaviour: {fileID: 4372982539813284436, guid: def7f71aa5fa9d34ca0da5bcbc2f7262, type: 3}
+  _roomBehaviour: {fileID: 6820270351876577451, guid: e8de1aab3d099114882cf4829d03171d, type: 3}
   _shopProbability: 10
   _roomProbabilities:
   - RoomType: 0
