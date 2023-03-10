@@ -17,9 +17,11 @@ public class PauseMenuManager : MonoBehaviour
     private void Update()
     {
         // Slider Float 0-100 | Default Value = 100 () | Whole Numbers = True
+        /*
         AkSoundEngine.SetRTPCValue("RTPC_MasterVolume", sliderMaster.value);
         AkSoundEngine.SetRTPCValue("RTPC_SFXVolume", sliderSFX.value);
         AkSoundEngine.SetRTPCValue("RTPC_MusicVolume", sliderMusic.value);
+        */
     }
 
     public void OnMouseClick()
