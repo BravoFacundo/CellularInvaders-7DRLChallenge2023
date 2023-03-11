@@ -18,11 +18,11 @@ public class EnemyController : MonoBehaviour
 
     [Header("General")]
     [SerializeField] private bool followTarget;
-    private Transform target;
+    private Vector3 targetPos;
 
     [Header("Watchman")]
-    private Transform pointA;
-    private Transform pointB;
+    [SerializeField] private Vector3 pointA;
+    [SerializeField] private Vector3 pointB;
 
     [Header("Sniper")]
     [SerializeField] private Transform bulletPrefab;
@@ -33,8 +33,8 @@ public class EnemyController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         enemySpeedBackup = enemySpeed;
 
-        //pointA = transform.GetChild(1).GetChild(0);
-        //pointB = transform.GetChild(1).GetChild(1);
+        pointA = transform.GetChild(1).GetChild(0).position;
+        pointB = transform.GetChild(1).GetChild(1).position;
         bulletParent = transform.GetChild(2);
     }
 
@@ -60,18 +60,18 @@ public class EnemyController : MonoBehaviour
                 break;
 
             case EnemyType.Sniper:
-                target = playerPos;
+                targetPos = playerPos.position;
                 enemySpeed = 0;
                 break;
 
             case EnemyType.Stalker:
-                target = playerPos;
+                targetPos = playerPos.position;
                 enemySpeed = enemySpeedBackup;
                 break;
         }
 
-        distance = Vector2.Distance(transform.position, target.position);
-        direction = target.transform.position - transform.position;
+        distance = Vector2.Distance(transform.position, targetPos);
+        direction = targetPos - transform.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         direction.Normalize();
         rb.rotation = angle;
@@ -85,12 +85,32 @@ public class EnemyController : MonoBehaviour
     void MoveEnemy(Vector2 direction)
     {
         rb.MovePosition((Vector2)transform.position + (enemySpeed * Time.deltaTime * direction));
+        //rb.AddForce((Vector2)transform.position + (enemySpeed * Time.deltaTime * direction));
     }
 
     private IEnumerator WatchmanBehaviour()
     {
-        target = pointB;
-        yield return new WaitForSeconds(1f);
+        targetPos = pointB;
+        bool isTargetingB = true;
+
+        while (true)
+        {
+            if (distance < .25f) 
+            {
+                if (isTargetingB)
+                {
+                    targetPos = pointA;
+                    isTargetingB = !isTargetingB;
+                }
+                else
+                {
+                    targetPos = pointB;
+                    isTargetingB = !isTargetingB;
+                }
+            }
+            yield return null;
+        }
+        
     }
 
     private IEnumerator SniperBehaviour()
