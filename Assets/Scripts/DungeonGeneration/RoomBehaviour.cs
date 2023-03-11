@@ -4,23 +4,27 @@ public class RoomBehaviour : MonoBehaviour
 {
     [Header("Room Information")]
     public RoomInfo RoomInfo;
-    public GameObject Wall;
-    public Transform[] WallSpawns;
+    public GameObject DoorParent;
+    public GameObject WallParent;
     public Vector2 RoomSize = new Vector2(10, 10);
 
     public void SpawnWalls()
     {
-        if ((RoomInfo.AdjacentRooms & AdjacentRooms.North) == 0)
-            Instantiate(Wall, WallSpawns[0]);
+        bool northAdjacent = (RoomInfo.AdjacentRooms & AdjacentRooms.North) == 0;
+        WallParent.transform.GetChild(0).gameObject.SetActive(northAdjacent);
+        DoorParent.transform.GetChild(0).gameObject.SetActive(!northAdjacent);
 
-        if ((RoomInfo.AdjacentRooms & AdjacentRooms.South) == 0)
-            Instantiate(Wall, WallSpawns[1]);
+        bool southAdjacent = (RoomInfo.AdjacentRooms & AdjacentRooms.South) == 0;
+        WallParent.transform.GetChild(1).gameObject.SetActive(southAdjacent);
+        DoorParent.transform.GetChild(1).gameObject.SetActive(!southAdjacent);
 
-        if ((RoomInfo.AdjacentRooms & AdjacentRooms.East) == 0)
-            Instantiate(Wall, WallSpawns[2]);
+        bool eastAdjacent = (RoomInfo.AdjacentRooms & AdjacentRooms.East) == 0;
+        WallParent.transform.GetChild(2).gameObject.SetActive(eastAdjacent);
+        DoorParent.transform.GetChild(2).gameObject.SetActive(!eastAdjacent);
 
-        if ((RoomInfo.AdjacentRooms & AdjacentRooms.West) == 0)
-            Instantiate(Wall, WallSpawns[3]);
+        bool westAdjacent = (RoomInfo.AdjacentRooms & AdjacentRooms.West) == 0;
+        WallParent.transform.GetChild(3).gameObject.SetActive(westAdjacent);
+        DoorParent.transform.GetChild(3).gameObject.SetActive(!westAdjacent);
     }
 
     public void SetupRoom()
