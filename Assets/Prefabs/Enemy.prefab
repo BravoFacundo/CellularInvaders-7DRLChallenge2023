@@ -426,7 +426,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7918313471180012896}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.79, y: -3.67, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -451,10 +451,11 @@ MonoBehaviour:
   enemyType: 0
   enemyLevel: 0
   enemySpeed: 15
+  distanceThreshold: 0.25
   playerPos: {fileID: 0}
   followTarget: 1
-  pointA: {fileID: 0}
-  pointB: {fileID: 0}
+  pointA: {x: 0, y: 0, z: 0}
+  pointB: {x: 0, y: 0, z: 0}
   bulletPrefab: {fileID: 2687883306757259771, guid: 9d10867ae1a65e94f83d11372c09007b, type: 3}
   bulletParent: {fileID: 0}
 --- !u!50 &1269213982732710027
@@ -685,7 +686,7 @@ GameObject:
   m_Layer: 0
   m_Name: PointB
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

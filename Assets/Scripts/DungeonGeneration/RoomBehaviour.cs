@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class RoomBehaviour : MonoBehaviour
 {
+    [Header("Room Layout")]
+    [SerializeField] private GameObject _roomLayout;
+
     [Header("Room Information")]
     public RoomInfo RoomInfo;
     public GameObject DoorParent;
@@ -43,6 +46,8 @@ public class RoomBehaviour : MonoBehaviour
                 SetupEliteRoom();
                 break;
         }
+
+        ActivateRoomLayout();
     }
 
     private void SetupShopRoom()
@@ -58,5 +63,11 @@ public class RoomBehaviour : MonoBehaviour
     private void SetupEliteRoom()
     {
         // This will generate elite enemies inside the room
+    }
+
+    private void ActivateRoomLayout()
+    {
+        // A dummy behaviour pattern for setting up the room layout
+        _roomLayout.SetActive(Random.value < 0.4f);
     }
 }

@@ -37,6 +37,10 @@ public class EnemyController : MonoBehaviour
         pointA = transform.GetChild(1).GetChild(0).position;
         pointB = transform.GetChild(1).GetChild(1).position;
         bulletParent = transform.GetChild(2);
+
+        // Not the best option, but it works at this moment
+        if (playerPos == null)
+            playerPos = FindObjectOfType<PlayerController>().transform;
     }
 
     void Start()

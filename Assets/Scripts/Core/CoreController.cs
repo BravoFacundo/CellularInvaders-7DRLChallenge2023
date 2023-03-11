@@ -44,7 +44,7 @@ public class CoreController : MonoBehaviour
         {
             if(colliders[i].tag.CompareTo("Player") == 0)
             {
-                colliders[i].gameObject.GetComponent<IDamageable>().TakeDamage(configuration.ExplosionDamage);
+                colliders[i].gameObject.GetComponent<IDamageable>()?.TakeDamage(configuration.ExplosionDamage);
             }
         }
     }
