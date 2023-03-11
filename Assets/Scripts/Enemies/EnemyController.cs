@@ -6,9 +6,10 @@ public class EnemyController : MonoBehaviour
 {
     [Header("Enemy Configuration")]
     [SerializeField] private EnemyType enemyType;
-    [SerializeField] private enum EnemyType { Watchman , Sniper , Stalker }
+    [SerializeField] private enum EnemyType { Watchman, Sniper, Stalker }
     [SerializeField] private int enemyLevel;
     [SerializeField] private float enemySpeed; private float enemySpeedBackup;
+    [SerializeField] private float distanceThreshold = .25f;
     private Vector2 direction;
     private float distance;
     private Rigidbody2D rb;
@@ -75,7 +76,6 @@ public class EnemyController : MonoBehaviour
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         direction.Normalize();
         rb.rotation = angle;
-
     }
 
     private void FixedUpdate()
@@ -95,22 +95,13 @@ public class EnemyController : MonoBehaviour
 
         while (true)
         {
-            if (distance < .25f) 
+            if (distance < distanceThreshold)
             {
-                if (isTargetingB)
-                {
-                    targetPos = pointA;
-                    isTargetingB = !isTargetingB;
-                }
-                else
-                {
-                    targetPos = pointB;
-                    isTargetingB = !isTargetingB;
-                }
+                targetPos = isTargetingB ? pointA : pointB;
+                isTargetingB = !isTargetingB;
             }
             yield return null;
         }
-        
     }
 
     private IEnumerator SniperBehaviour()
