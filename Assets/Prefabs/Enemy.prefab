@@ -449,15 +449,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyType: 0
-  enemyLevel: 0
+  enemyLevel: 3
   enemySpeed: 15
   distanceThreshold: 0.25
   playerPos: {fileID: 0}
   followTarget: 1
   pointA: {x: 0, y: 0, z: 0}
   pointB: {x: 0, y: 0, z: 0}
+  watchmanSprites:
+  - {fileID: 21300000, guid: 6c5bf16fa28a8b742bf6232027925db0, type: 3}
+  - {fileID: 21300000, guid: 6059690d6c2f54d42a5189d673c5a549, type: 3}
+  - {fileID: 21300000, guid: b69115f0a7ed6024c8635d2833b3d941, type: 3}
+  - {fileID: 21300000, guid: 668f7d19db0df3e4586950ea6da1559a, type: 3}
   bulletPrefab: {fileID: 2687883306757259771, guid: 9d10867ae1a65e94f83d11372c09007b, type: 3}
-  bulletParent: {fileID: 0}
+  sniperSprites:
+  - {fileID: 21300000, guid: 042ee9c64b8586146afa9747471b923b, type: 3}
+  - {fileID: 21300000, guid: 0f00c393588b1614bab45c4e3d79b9c6, type: 3}
+  - {fileID: 21300000, guid: 4010dfdaad7268a4a82743e7a78dd531, type: 3}
+  - {fileID: 21300000, guid: f0a65515255e9ba45883cdcb26295c20, type: 3}
 --- !u!50 &1269213982732710027
 Rigidbody2D:
   serializedVersion: 4

@@ -24,10 +24,12 @@ public class EnemyController : MonoBehaviour
     [Header("Watchman")]
     [SerializeField] private Vector3 pointA;
     [SerializeField] private Vector3 pointB;
+    [SerializeField] private Sprite[] watchmanSprites = new Sprite[4];
 
     [Header("Sniper")]
     [SerializeField] private Transform bulletPrefab;
-    [SerializeField] private Transform bulletParent;
+    private Transform bulletParent;
+    [SerializeField] private Sprite[] sniperSprites = new Sprite[4];
 
     private void Awake()
     {
@@ -49,9 +51,13 @@ public class EnemyController : MonoBehaviour
         {
             case EnemyType.Watchman:
                 StartCoroutine(nameof(WatchmanBehaviour));
+                transform.GetChild(0).GetChild(3).GetComponent<SpriteRenderer>().sprite = watchmanSprites[0];
+                transform.GetChild(0).GetChild(2).GetComponent<SpriteRenderer>().sprite = watchmanSprites[enemyLevel];
                 break;
             case EnemyType.Sniper:
                 StartCoroutine(nameof(SniperBehaviour));
+                transform.GetChild(0).GetChild(3).GetComponent<SpriteRenderer>().sprite = sniperSprites[0];
+                transform.GetChild(0).GetChild(2).GetComponent<SpriteRenderer>().sprite = sniperSprites[enemyLevel];
                 break;
         }
     }

@@ -3138,6 +3138,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: CellularRoom
       objectReference: {fileID: 0}
+    - target: {fileID: 3060565605553466444, guid: e8de1aab3d099114882cf4829d03171d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7134169455808003238, guid: e8de1aab3d099114882cf4829d03171d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7134169455808003238, guid: e8de1aab3d099114882cf4829d03171d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7134169455808003238, guid: e8de1aab3d099114882cf4829d03171d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7134169455808003238, guid: e8de1aab3d099114882cf4829d03171d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: 7134169455808003238, guid: e8de1aab3d099114882cf4829d03171d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8579368419856554381, guid: e8de1aab3d099114882cf4829d03171d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8de1aab3d099114882cf4829d03171d, type: 3}
 --- !u!1 &1232094248
@@ -6283,6 +6311,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoomConfig
       objectReference: {fileID: 0}
+    - target: {fileID: 3071257935845816152, guid: 160fc586b805d1a44bc6c4900bade761, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3071257935845816153, guid: 160fc586b805d1a44bc6c4900bade761, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -6417,7 +6449,6 @@ MonoBehaviour:
   pointA: {x: 0, y: 0, z: 0}
   pointB: {x: 0, y: 0, z: 0}
   bulletPrefab: {fileID: 2687883306757259771, guid: 9d10867ae1a65e94f83d11372c09007b, type: 3}
-  bulletParent: {fileID: 0}
 --- !u!4 &8643550556630991735
 Transform:
   m_ObjectHideFlags: 0
