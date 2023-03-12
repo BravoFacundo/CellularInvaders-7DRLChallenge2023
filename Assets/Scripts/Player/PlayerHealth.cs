@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerHealth
 {
+    public event Action OnPlayerDead;
     public event Action OnReceiveDamage;
     private readonly PlayerConfigurationSO playerConfiguration;
     private readonly GameObject healthIconPrefab;
@@ -66,6 +67,11 @@ public class PlayerHealth
             }
 
             OnReceiveDamage?.Invoke();
+        }
+
+        if(activeLifeIcons.Count == 0)
+        {
+            OnPlayerDead?.Invoke();
         }
     }
 

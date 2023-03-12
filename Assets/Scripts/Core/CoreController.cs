@@ -8,6 +8,8 @@ public class CoreController : MonoBehaviour
     [SerializeField] private SpriteRenderer coreSpriteRenderer;
 
     [SerializeField] private Rigidbody2D coinPrefab;
+    [SerializeField] private Rigidbody2D powerUpPrefab;
+    [SerializeField, Range(0f, 1f)] private float powerUpSpawnProbability = 0.3f;
     private bool isAboutToExplode = false;
     private CoreUICounter coreUICounter;
 
@@ -62,6 +64,22 @@ public class CoreController : MonoBehaviour
         {
             SpawnCoin();
         }
+
+        float randomPowerUp = Random.Range(0, 1f);
+        if(randomPowerUp <= powerUpSpawnProbability)
+        {
+            SpawnPowerUp();
+        }
+    }
+
+    private void SpawnPowerUp()
+    {
+        Rigidbody2D powerUpRigidBody = GameObject.Instantiate(powerUpPrefab, transform.position, Quaternion.identity);
+        float x = Random.Range(-1f, 1f);
+        float y = Random.Range(-1f, 1f);
+
+        Vector2 force = new Vector2(configuration.ExplosionForce * x, configuration.ExplosionForce * y);
+        powerUpRigidBody.AddForce(force, ForceMode2D.Impulse);
     }
 
     private void SpawnCoin()

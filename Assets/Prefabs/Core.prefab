@@ -76,7 +76,9 @@ MonoBehaviour:
   configuration: {fileID: 11400000, guid: 6d01e1cd3e98fcc468a58c360fbe3e12, type: 2}
   explosionParticleSystem: {fileID: 60479987714054823}
   coreSpriteRenderer: {fileID: 60479987608291367}
-  coinPrefab: {fileID: 0}
+  coinPrefab: {fileID: 1231170882898480164, guid: bac641bcc9d60eb46a3a3eb3083bf4db, type: 3}
+  powerUpPrefab: {fileID: 5853592179966155519, guid: c6b3dade0c2b4d34e958206e4e2773ae, type: 3}
+  powerUpSpawnProbability: 1
 --- !u!1 &60479987608291365
 GameObject:
   m_ObjectHideFlags: 0

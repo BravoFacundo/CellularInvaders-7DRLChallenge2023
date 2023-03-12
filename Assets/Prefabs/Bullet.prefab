@@ -309,6 +309,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 70f92e3ca208a044b977eaf1e45e6b8d, type: 3}
   - {fileID: 21300000, guid: c509034ac3961c14d9c88eded9b2f889, type: 3}
   - {fileID: 21300000, guid: 8066d9f25379ca446bf5875ced8771b8, type: 3}
+  lifetime: 3
 --- !u!50 &343870996431116455
 Rigidbody2D:
   serializedVersion: 4
@@ -340,9 +341,9 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.17365526
+  m_Radius: 0.15
