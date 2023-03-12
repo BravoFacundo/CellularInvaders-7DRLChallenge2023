@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: a26c54d6bf9d6947bca8c25094a59526
     GuidInternal: 
-    m_lastTime: -8585235459765619467
+    m_lastTime: -8585229531534475818
     List:
     - name: AmbienceMaster
       guid: cc13caf61c3a4c419fb4223aa6523816
@@ -60,6 +60,26 @@ MonoBehaviour:
         ObjectType: 2
         guid: cc13caf61c3a4c419fb4223aa6523816
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFXMaster\AmbienceMaster
+    - name: CoreMaster
+      guid: a44daae5ab50b94a8ed082ad2f04436c
+      id: 205869254
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a26c54d6bf9d6947bca8c25094a59526
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFXMaster
+        ObjectType: 2
+        guid: 8bbadb3c63916b48aa6cdfe2f8751ae8
+      - ElementName: CoreMaster
+        ObjectType: 2
+        guid: a44daae5ab50b94a8ed082ad2f04436c
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFXMaster\CoreMaster
     - name: FoesMaster
       guid: c31f46dc881fab448110dc0bcca4b391
       id: 1836367610
@@ -213,7 +233,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Main
     guid: 8b23ce3e9aa4224ab80e4ceeaab7e8b3
     GuidInternal: 
-    m_lastTime: -8585232729360169073
+    m_lastTime: -8585229605624002614
     List:
     - name: Main
       guid: 417e0ff7929a184eab47af28e049a655
@@ -257,19 +277,76 @@ MonoBehaviour:
         guid: afcf3059420e4d469d49f23beae99d6a
       Path: SoundBanks\Test\Test
   EventWwu:
-  - PhysicalPath: Events\Ambience.wwu
+  - PhysicalPath: Events\Core.wwu
     PathAndIcons:
     - ElementName: Events
       ObjectType: 5
       guid: 00000000000000000000000000000000
-    - ElementName: Ambience
+    - ElementName: Core
       ObjectType: 12
-      guid: 4bf86ebdd76ec043a6365c9710c65add
-    ParentPath: Events\Ambience
-    guid: 4bf86ebdd76ec043a6365c9710c65add
+      guid: 6491e91397bfea46b181267da4997c18
+    ParentPath: Events\Core
+    guid: 6491e91397bfea46b181267da4997c18
     GuidInternal: 
-    m_lastTime: -8585242321587956221
-    List: []
+    m_lastTime: -8585229531534510586
+    List:
+    - name: Core
+      guid: c6365d077f441440836fe1d64e429906
+      id: 3787826988
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Core
+        ObjectType: 12
+        guid: 6491e91397bfea46b181267da4997c18
+      - ElementName: Core
+        ObjectType: 4
+        guid: c6365d077f441440836fe1d64e429906
+      Path: Events\Core\Core
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Core_Collision
+      guid: 4a6eba6be27f2b40b6a56721fbd5da99
+      id: 1904839238
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Core
+        ObjectType: 12
+        guid: 6491e91397bfea46b181267da4997c18
+      - ElementName: Core
+        ObjectType: 4
+        guid: c6365d077f441440836fe1d64e429906
+      - ElementName: Play_Core_Collision
+        ObjectType: 3
+        guid: 4a6eba6be27f2b40b6a56721fbd5da99
+      Path: Events\Core\Core\Play_Core_Collision
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Core_Explosion
+      guid: c38920494acc9a439e7d24112d78010b
+      id: 828558183
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Core
+        ObjectType: 12
+        guid: 6491e91397bfea46b181267da4997c18
+      - ElementName: Core
+        ObjectType: 4
+        guid: c6365d077f441440836fe1d64e429906
+      - ElementName: Play_Core_Explosion
+        ObjectType: 3
+        guid: c38920494acc9a439e7d24112d78010b
+      Path: Events\Core\Core\Play_Core_Explosion
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
@@ -283,6 +360,76 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585242639182870351
     List: []
+  - PhysicalPath: Events\Enviroment.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Enviroment
+      ObjectType: 12
+      guid: 4353420ba82d1743a575784c512c07c6
+    ParentPath: Events\Enviroment
+    guid: 4353420ba82d1743a575784c512c07c6
+    GuidInternal: 
+    m_lastTime: -8585229607427466400
+    List:
+    - name: Enviroment
+      guid: e6f77217882aa94b9451281241eef827
+      id: 3909959462
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Enviroment
+        ObjectType: 12
+        guid: 4353420ba82d1743a575784c512c07c6
+      - ElementName: Enviroment
+        ObjectType: 4
+        guid: e6f77217882aa94b9451281241eef827
+      Path: Events\Enviroment\Enviroment
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_ENV_AmbienceBG
+      guid: a1d4a55e68bad44596cba0585b2a1c8c
+      id: 3399054955
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Enviroment
+        ObjectType: 12
+        guid: 4353420ba82d1743a575784c512c07c6
+      - ElementName: Enviroment
+        ObjectType: 4
+        guid: e6f77217882aa94b9451281241eef827
+      - ElementName: Play_ENV_AmbienceBG
+        ObjectType: 3
+        guid: a1d4a55e68bad44596cba0585b2a1c8c
+      Path: Events\Enviroment\Enviroment\Play_ENV_AmbienceBG
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_ENV_AmbienceBG
+      guid: 8afabb04560f4c46bb13609322d81c3d
+      id: 3714348409
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Enviroment
+        ObjectType: 12
+        guid: 4353420ba82d1743a575784c512c07c6
+      - ElementName: Enviroment
+        ObjectType: 4
+        guid: e6f77217882aa94b9451281241eef827
+      - ElementName: Stop_ENV_AmbienceBG
+        ObjectType: 3
+        guid: 8afabb04560f4c46bb13609322d81c3d
+      Path: Events\Enviroment\Enviroment\Stop_ENV_AmbienceBG
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Foes.wwu
     PathAndIcons:
     - ElementName: Events
