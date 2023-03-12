@@ -82,17 +82,40 @@ public class RoomBehaviour : MonoBehaviour
 
     private void SetupEnemiesRoom()
     {
-        // This will generate enemies inside the room
+        int roomLevel = RoomInfo.RoomType switch
+        {
+            RoomType.EasyEnemies => 0,
+            RoomType.MediumEnemies => 1,
+            RoomType.HardEnemies => 2,
+            _ => 0,
+        };
+
+        foreach (var renderer in GetComponentsInChildren<SpriteRenderer>())
+        {
+            if (renderer.gameObject.name == "SoftWall")
+                continue;
+            Color newColor = Color.HSVToRGB(0, roomLevel * 0.1f, 1f - roomLevel * 0.1f);
+            renderer.color = newColor;
+        }
     }
 
     private void SetupEliteRoom()
     {
         // This will generate elite enemies inside the room
+        foreach (var renderer in GetComponentsInChildren<SpriteRenderer>())
+        {
+            if (renderer.gameObject.GetComponent<EnemyController>() != null)
+                continue;
+            if (renderer.gameObject.name == "SoftWall")
+                continue;
+            Color newColor = Color.HSVToRGB(0, 0, 0.5f);
+            renderer.color = newColor;
+        }
     }
 
     private void ActivateRoomLayout()
     {
         // A dummy behaviour pattern for setting up the room layout
-        _roomLayout.transform.RotateAroundLocal(Vector3.forward, Random.Range(0.0f, 359.9f));
+        // _roomLayout.transform.RotateAroundLocal(Vector3.forward, Random.Range(0.0f, 359.9f));
     }
 }
