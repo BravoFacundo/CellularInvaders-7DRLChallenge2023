@@ -12,6 +12,7 @@ public class CoinUICounter : MonoBehaviour
     private void Awake()
     {
         textComponent = GetComponent<TextMeshProUGUI>();
+        textComponent.text = "0";
     }
 
     public void AddCoins(int addition)

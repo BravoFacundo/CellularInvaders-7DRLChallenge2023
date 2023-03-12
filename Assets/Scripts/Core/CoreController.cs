@@ -9,6 +9,12 @@ public class CoreController : MonoBehaviour
 
     [SerializeField] private Rigidbody2D coinPrefab;
     private bool isAboutToExplode = false;
+    private CoreUICounter coreUICounter;
+
+    private void Awake()
+    {
+        coreUICounter = FindObjectOfType<CoreUICounter>();
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -30,6 +36,7 @@ public class CoreController : MonoBehaviour
     private void Explode()
     {
         Debug.Log("Boom");
+        coreUICounter.AddCore();
         explosionParticleSystem.Play();
         coreSpriteRenderer.enabled = false;
         SpawnObjects();
