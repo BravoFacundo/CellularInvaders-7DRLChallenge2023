@@ -5,6 +5,12 @@ public class BulletBehaviour : MonoBehaviour
 {
     public int bulletLevel;
     [SerializeField] private Sprite[] bulletSprites = new Sprite[3];
+    [SerializeField] private float lifetime = 3f;
+
+    private void Start()
+    {
+        StartCoroutine(DestroyAfterTime(lifetime));
+    }
 
     public void ChangeBulletSprite()
     {
@@ -13,9 +19,15 @@ public class BulletBehaviour : MonoBehaviour
         transform.GetChild(0).GetChild(1).GetComponent<SpriteRenderer>().color = newColor;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        StartCoroutine(DestroyAfterTime(Time.deltaTime * 3f));
+        if(collision.tag.CompareTo("Player") == 0)
+        {
+            collision.GetComponent<IDamageable>().TakeDamage(1);
+        }
+
+        Destroy(gameObject);
+        //StartCoroutine(DestroyAfterTime(Time.deltaTime * 3f));
     }
 
     private IEnumerator DestroyAfterTime(float timeInSeconds)

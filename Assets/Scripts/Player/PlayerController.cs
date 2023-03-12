@@ -1,7 +1,9 @@
 using UnityEngine;
+using System;
 
 public class PlayerController : MonoBehaviour, IDamageable
 {
+    public event Action OnPlayerDead;
     [SerializeField] private PlayerConfigurationSO configuration;
     private PlayerMovement movementComponent;
     [SerializeField] private Transform ghostTransform;
@@ -25,6 +27,7 @@ public class PlayerController : MonoBehaviour, IDamageable
     private void OnEnable()
     {
         healthComponent.OnReceiveDamage += TakeDamageEvents;
+        healthComponent.OnPlayerDead += PlayerDeadEvents;
         powerUpsComponent.OnMovementPowerUpActivated += MovementPowerUpActivationEvents;
         powerUpsComponent.OnMovementPowerUpDeactivated += MovementPowerUpDeactivationEvents;
     }
@@ -32,6 +35,7 @@ public class PlayerController : MonoBehaviour, IDamageable
     private void OnDisable()
     {
         healthComponent.OnReceiveDamage -= TakeDamageEvents;
+        healthComponent.OnPlayerDead -= PlayerDeadEvents;
         powerUpsComponent.OnMovementPowerUpActivated -= MovementPowerUpActivationEvents;
         powerUpsComponent.OnMovementPowerUpDeactivated -= MovementPowerUpDeactivationEvents;
     }
@@ -88,5 +92,11 @@ public class PlayerController : MonoBehaviour, IDamageable
     public void TakeDamage(int damage)
     {
         healthComponent.TakeDamage(damage);
+    }
+
+    private void PlayerDeadEvents()
+    {
+        OnPlayerDead?.Invoke();
+        Debug.Log("Muerotooo");
     }
 }
