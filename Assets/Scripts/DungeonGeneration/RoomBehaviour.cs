@@ -51,6 +51,9 @@ public class RoomBehaviour : MonoBehaviour
     {
         switch (RoomInfo.RoomType)
         {
+            case RoomType.Spawn:
+                SetupSpawnRoom();
+                break;
             case RoomType.Shop:
                 SetupShopRoom();
                 break;
@@ -65,6 +68,11 @@ public class RoomBehaviour : MonoBehaviour
         }
 
         ActivateRoomLayout();
+    }
+
+    private void SetupSpawnRoom()
+    {
+        _roomLayout.SetActive(false); // We don't want enemies on the spawning room
     }
 
     private void SetupShopRoom()

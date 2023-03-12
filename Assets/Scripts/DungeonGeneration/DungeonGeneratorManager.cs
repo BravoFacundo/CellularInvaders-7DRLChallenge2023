@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,7 @@ public enum GenerationMethod
 public class RoomProbability
 {
     [SerializeField] public RoomType RoomType;
-    [SerializeField] [Range(0, 100)] public float Probability;
+    [SerializeField][Range(0, 100)] public float Probability;
 }
 
 public class DungeonGeneratorManager : MonoBehaviour
@@ -29,7 +30,8 @@ public class DungeonGeneratorManager : MonoBehaviour
     [SerializeField] private int _randomRoomAmountUpperBound = 10;
 
     [SerializeField] private RoomBehaviour _roomBehaviour;
-    [SerializeField] [Range(0, 100)] private float _shopProbability = 10f;
+    [SerializeField] private RoomBehaviour _shopRoomBehaviour;
+    [SerializeField][Range(0, 100)] private float _shopProbability = 10f;
     [SerializeField] private List<RoomProbability> _roomProbabilities = new List<RoomProbability>();
     private float _accumulatedProbability = 0.0f;
 
@@ -74,10 +76,55 @@ public class DungeonGeneratorManager : MonoBehaviour
 
     private void GenerateProceduralRooms(int roomsToCreate)
     {
+        int SelectRandomDirection(Vector2Int currentRoom)
+        {
+            int centerArea = 4;
+            if (Mathf.Abs(currentRoom.x) <= centerArea && Mathf.Abs(currentRoom.y) <= centerArea)
+                return Random.Range(0, 4); // Four available directions
+
+            // We want a higher probability for going to the center of the grid
+            // if we are far enough from the center
+
+            float value = Random.value;
+            float directionBias = 0.8f;
+            int[] directions = new int[4] { 0, 1, 2, 3 }; // Up-Down-Right-Left
+            int randIndex = Random.Range(1, 4); // Random from 1 to 3
+
+            if (Mathf.Abs(currentRoom.x) <= Mathf.Abs(currentRoom.y))
+            {
+                if (currentRoom.y < -centerArea) // Too down, going up
+                {
+                    if (value < directionBias) return directions[0];
+                    else return directions[randIndex];
+                }
+                else if (currentRoom.y > centerArea) // Too up, going down
+                {
+                    if (value < directionBias) return directions[1];
+                    else return directions[(randIndex + 1) % 4];
+                }
+            }
+            else
+            {
+                if (currentRoom.x < -centerArea) // Too right, going left
+                {
+                    if (value < directionBias) return directions[2];
+                    else return directions[(randIndex + 2) % 4];
+                }
+                else if (currentRoom.x > centerArea) // Too left, going right
+                {
+                    if (value < directionBias) return directions[3];
+                    else return directions[(randIndex + 3) % 4];
+                }
+            }
+
+            Debug.LogError("[ERROR] Returning no direction, this should never happen!", gameObject);
+            return 4;
+        }
+
         int roomsCreated = 0;
         while (roomsCreated < roomsToCreate)
         {
-            int rand = Random.Range(0, 4); // Four available directions
+            int rand = SelectRandomDirection(_currentRoomGenerated);
 
             if (!_roomPositions.Contains(_currentRoomGenerated))
             {
@@ -114,7 +161,8 @@ public class DungeonGeneratorManager : MonoBehaviour
 
             var room = Instantiate(resource, roomInfo.WorldPosition, Quaternion.identity);
 #endif
-            var room = Instantiate(_roomBehaviour, roomInfo.WorldPosition, Quaternion.identity, _environment);
+            var room = Instantiate(roomInfo.RoomType == RoomType.Shop ? _shopRoomBehaviour : _roomBehaviour,
+                roomInfo.WorldPosition, Quaternion.identity, _environment);
             room.RoomInfo = roomInfo;
             room.SpawnWalls();
             room.SetupRoom();
@@ -135,7 +183,7 @@ public class DungeonGeneratorManager : MonoBehaviour
                     return RoomType.Shop;
                 }
             }
-            
+
             float rnd = Random.Range(0.0f, _accumulatedProbability);
             float accum = 0f;
             foreach (var element in _roomProbabilities)
