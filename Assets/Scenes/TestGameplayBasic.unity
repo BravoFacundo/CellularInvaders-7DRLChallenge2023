@@ -2579,10 +2579,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _environment: {fileID: 1130692067}
   _generationMethod: 0
-  _fixedRoomAmount: 8
+  _fixedRoomAmount: 40
   _randomRoomAmountLowerBound: 5
   _randomRoomAmountUpperBound: 10
   _roomBehaviour: {fileID: 6820270351876577451, guid: e8de1aab3d099114882cf4829d03171d, type: 3}
+  _shopRoomBehaviour: {fileID: 6820270351876577451, guid: 0fc3e674cffcaa9458b785cf5a25b6f2, type: 3}
   _shopProbability: 10
   _roomProbabilities:
   - RoomType: 0
