@@ -40,6 +40,8 @@ public class EnemyController : MonoBehaviour
         pointB = transform.GetChild(1).GetChild(1).position;
         bulletParent = transform.GetChild(2);
 
+        Color newColor = Color.HSVToRGB(0,0, 1f - enemyLevel * 0.1f );
+
         switch (enemyType)
         {
             case EnemyType.Watchman:
@@ -48,14 +50,12 @@ public class EnemyController : MonoBehaviour
                 transform.GetChild(0).GetChild(2).GetComponent<SpriteRenderer>().sprite = watchmanSprites[enemyLevel];
                 break;
             case EnemyType.Sniper:
-                if (playerPos == null)
-                {
-                    playerPos = FindObjectOfType<PlayerController>().transform;
-                }
-
+                if (playerPos == null) playerPos = FindObjectOfType<PlayerController>().transform;
                 StartCoroutine(nameof(SniperBehaviour));
                 transform.GetChild(0).GetChild(3).GetComponent<SpriteRenderer>().sprite = sniperSprites[0];
+                transform.GetChild(0).GetChild(3).GetComponent<SpriteRenderer>().color = newColor;
                 transform.GetChild(0).GetChild(2).GetComponent<SpriteRenderer>().sprite = sniperSprites[enemyLevel];
+                transform.GetChild(0).GetChild(2).GetComponent<SpriteRenderer>().color = newColor;
                 break;
         }
     }
@@ -119,6 +119,8 @@ public class EnemyController : MonoBehaviour
         {
             Transform newBullet = Instantiate(bulletPrefab, bulletParent.position, Quaternion.identity);
             newBullet.GetComponent<Rigidbody2D>().AddForce(50f * enemySpeedBackup * direction);
+            newBullet.GetComponent<BulletBehaviour>().bulletLevel = enemyLevel;
+            newBullet.GetComponent<BulletBehaviour>().ChangeBulletSprite();
 
             waitTime = Random.Range(1f, 3f);
             yield return new WaitForSeconds(waitTime);
