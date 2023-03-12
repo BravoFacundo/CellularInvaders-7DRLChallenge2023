@@ -22,10 +22,13 @@ public class PlayerController : MonoBehaviour, IDamageable
         movementComponent = new PlayerMovement(ghostTransform, configuration);
         healthComponent = new PlayerHealth(configuration, healtIconPrefab, lifesParentTransform);
         powerUpsComponent = new PowerUpController();
+
+        AkSoundEngine.SetRTPCValue("RTPC_PlayerLife", healthComponent.GetLifesLeft());
     }
 
     private void OnEnable()
     {
+        OnPlayerDead += PlayerController_OnPlayerDead;
         healthComponent.OnReceiveDamage += TakeDamageEvents;
         healthComponent.OnPlayerDead += PlayerDeadEvents;
         powerUpsComponent.OnMovementPowerUpActivated += MovementPowerUpActivationEvents;
@@ -34,6 +37,7 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     private void OnDisable()
     {
+        OnPlayerDead -= PlayerController_OnPlayerDead;
         healthComponent.OnReceiveDamage -= TakeDamageEvents;
         healthComponent.OnPlayerDead -= PlayerDeadEvents;
         powerUpsComponent.OnMovementPowerUpActivated -= MovementPowerUpActivationEvents;
@@ -98,5 +102,12 @@ public class PlayerController : MonoBehaviour, IDamageable
     {
         OnPlayerDead?.Invoke();
         Debug.Log("Muerotooo");
+    }
+
+    private void PlayerController_OnPlayerDead()
+    {
+        // Spawn retry UI
+        // Pause game
+        // Go to menu
     }
 }
