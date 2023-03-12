@@ -1220,6 +1220,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 932748818856028530, guid: 12568767083716e4d99d6947967bbde6, type: 3}
   m_PrefabInstance: {fileID: 2044092398}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2044092400 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5331302711099283582, guid: 12568767083716e4d99d6947967bbde6, type: 3}
+  m_PrefabInstance: {fileID: 2044092398}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bd0b7b6cc9d14743953f9ecda29e276, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2134447452
 GameObject:
   m_ObjectHideFlags: 0
@@ -1366,7 +1377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfcc156b5e61888448ab0c5705adac2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 0}
+  pauseMenuUI: {fileID: 2044092400}
   buttonClickSFX: Play_Test_Beep_1kHz
   buttonHoverSFX: Play_Test_Beep_500Hz
   sliderMaster: {fileID: 91337625}
