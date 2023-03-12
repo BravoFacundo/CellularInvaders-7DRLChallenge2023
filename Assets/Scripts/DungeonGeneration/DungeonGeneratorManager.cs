@@ -19,7 +19,7 @@ public class RoomProbability
 public class DungeonGeneratorManager : MonoBehaviour
 {
     #region Variables
-
+    [SerializeField] private Transform _environment;
 
     [Header("Dungeon Generation Config")]
     [SerializeField] private GenerationMethod _generationMethod;
@@ -114,7 +114,7 @@ public class DungeonGeneratorManager : MonoBehaviour
 
             var room = Instantiate(resource, roomInfo.WorldPosition, Quaternion.identity);
 #endif
-            var room = Instantiate(_roomBehaviour, roomInfo.WorldPosition, Quaternion.identity);
+            var room = Instantiate(_roomBehaviour, roomInfo.WorldPosition, Quaternion.identity, _environment);
             room.RoomInfo = roomInfo;
             room.SpawnWalls();
             room.SetupRoom();
