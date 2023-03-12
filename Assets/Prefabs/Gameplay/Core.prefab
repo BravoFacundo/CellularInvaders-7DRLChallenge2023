@@ -78,7 +78,7 @@ MonoBehaviour:
   coreSpriteRenderer: {fileID: 60479987608291367}
   coinPrefab: {fileID: 1231170882898480164, guid: bac641bcc9d60eb46a3a3eb3083bf4db, type: 3}
   powerUpPrefab: {fileID: 5853592179966155519, guid: c6b3dade0c2b4d34e958206e4e2773ae, type: 3}
-  powerUpSpawnProbability: 1
+  powerUpSpawnProbability: 0.65
 --- !u!1 &60479987608291365
 GameObject:
   m_ObjectHideFlags: 0
