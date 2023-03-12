@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class MenuManager : MonoBehaviour
@@ -14,6 +15,11 @@ public class MenuManager : MonoBehaviour
     private void Awake()
     {
         AkSoundEngine.SetState("GameStatus", "InMenu");
+    }
+
+    private void Start()
+    {
+        AkSoundEngine.PostEvent("Play_Music", gameObject);
     }
 
     public void OnMouseClick()
@@ -35,6 +41,7 @@ public class MenuManager : MonoBehaviour
     {
         AkSoundEngine.PostEvent(startSFX, gameObject);
         AkSoundEngine.SetState("GameStatus", "InGame");
+        SceneManager.LoadScene("InGame");
     }
 
 }
