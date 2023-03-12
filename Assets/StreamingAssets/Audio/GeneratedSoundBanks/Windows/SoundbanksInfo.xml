@@ -72,21 +72,21 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3157003241" Type="User" Language="SFX" Hash="{CC9F722D-A835-68EC-7FC5-B46BAB10F0AD}">
+		<SoundBank Id="3157003241" Type="User" Language="SFX" Hash="{00D0A27F-3F3D-3E3A-BA56-B930F54F61DD}">
 			<ShortName>Test</ShortName>
 			<Path>Test.bnk</Path>
 			<Media>
 				<File Id="638319349" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Test\Test_Beep_1kHz.wav</ShortName>
-					<CachePath>SFX/Test/Test_Beep_1kHz_10C4C929.wem</CachePath>
+					<CachePath>SFX/Test/Test_Beep_1kHz_755F56E2.wem</CachePath>
 				</File>
 				<File Id="723519266" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Test\Drumkit_Loop.wav</ShortName>
-					<CachePath>SFX/Test/Drumkit_Loop_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/Test/Drumkit_Loop_073B4D0C.wem</CachePath>
 				</File>
 				<File Id="797743916" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Test\Test_Beep_500Hz.wav</ShortName>
-					<CachePath>SFX/Test/Test_Beep_500Hz_10C4C929.wem</CachePath>
+					<CachePath>SFX/Test/Test_Beep_500Hz_755F56E2.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -124,57 +124,182 @@
 				<Event Id="2503746936" Name="Stop_Test_Drumkit_Loop_3D" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{ECAA752A-B6F6-6738-0A00-FDFE9FAA2339}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{F0540699-380F-7368-745C-695A0C05ACB3}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
+				<File Id="55910029" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\Gameplay Theme\Gameplay FullLife\7DLR Challenge Music - Gameplay - FullHealth A1 - v1.wav</ShortName>
+					<CachePath>SFX/Music/Gameplay Theme/Gameplay FullLife/7DLR Challenge Music - Gameplay - FullHealth A1 - v1_073B4D0C.wem</CachePath>
+				</File>
 				<File Id="105536463" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music\Menu Theme\7DLR Challenge Music - Menu Intro - v1.wav</ShortName>
-					<CachePath>SFX/Music/Menu Theme/7DLR Challenge Music - Menu Intro - v1_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/Music/Menu Theme/7DLR Challenge Music - Menu Intro - v1_073B4D0C.wem</CachePath>
+				</File>
+				<File Id="163464048" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\Gameplay Theme\Gameplay LowHealth\7DLR Challenge Music - Gameplay - LowHealth A2 - v1.wav</ShortName>
+					<CachePath>SFX/Music/Gameplay Theme/Gameplay LowHealth/7DLR Challenge Music - Gameplay - LowHealth A2 - v1_073B4D0C.wem</CachePath>
+				</File>
+				<File Id="205547633" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\Gameplay Theme\Gameplay NearDeath\7DLR Challenge Music - Gameplay - NearDeath B2 - v1.wav</ShortName>
+					<CachePath>SFX/Music/Gameplay Theme/Gameplay NearDeath/7DLR Challenge Music - Gameplay - NearDeath B2 - v1_073B4D0C.wem</CachePath>
+				</File>
+				<File Id="262031508" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\Gameplay Theme\Gameplay FullLife\7DLR Challenge Music - Gameplay - FullHealth B1 - v1.wav</ShortName>
+					<CachePath>SFX/Music/Gameplay Theme/Gameplay FullLife/7DLR Challenge Music - Gameplay - FullHealth B1 - v1_073B4D0C.wem</CachePath>
+				</File>
+				<File Id="269941412" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\Gameplay Theme\Gameplay FullLife\7DLR Challenge Music - Gameplay - FullHealth A2 - v1.wav</ShortName>
+					<CachePath>SFX/Music/Gameplay Theme/Gameplay FullLife/7DLR Challenge Music - Gameplay - FullHealth A2 - v1_073B4D0C.wem</CachePath>
 				</File>
 				<File Id="335416276" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music\Menu Theme\7DLR Challenge Music - Menu A2 - v1.wav</ShortName>
-					<CachePath>SFX/Music/Menu Theme/7DLR Challenge Music - Menu A2 - v1_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/Music/Menu Theme/7DLR Challenge Music - Menu A2 - v1_073B4D0C.wem</CachePath>
 				</File>
-				<File Id="363933681" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Music\Menu Theme\7DLR Challenge Music - Menu A3 - v1.wav</ShortName>
-					<CachePath>SFX/Music/Menu Theme/7DLR Challenge Music - Menu A3 - v1_D79FB2B7.wem</CachePath>
+				<File Id="374715100" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\Gameplay Theme\Gameplay LowHealth\7DLR Challenge Music - Gameplay - LowHealth B2 - v1.wav</ShortName>
+					<CachePath>SFX/Music/Gameplay Theme/Gameplay LowHealth/7DLR Challenge Music - Gameplay - LowHealth B2 - v1_073B4D0C.wem</CachePath>
+				</File>
+				<File Id="447867355" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\Gameplay Theme\Gameplay NearDeath\7DLR Challenge Music - Gameplay - NearDeath A2 - v1.wav</ShortName>
+					<CachePath>SFX/Music/Gameplay Theme/Gameplay NearDeath/7DLR Challenge Music - Gameplay - NearDeath A2 - v1_073B4D0C.wem</CachePath>
+				</File>
+				<File Id="480506085" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\Gameplay Theme\Gameplay FullLife\7DLR Challenge Music - Gameplay - FullHealth B2 - v1.wav</ShortName>
+					<CachePath>SFX/Music/Gameplay Theme/Gameplay FullLife/7DLR Challenge Music - Gameplay - FullHealth B2 - v1_073B4D0C.wem</CachePath>
+				</File>
+				<File Id="725937632" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\Gameplay Theme\Gameplay NearDeath\7DLR Challenge Music - Gameplay - NearDeath A1 - v1.wav</ShortName>
+					<CachePath>SFX/Music/Gameplay Theme/Gameplay NearDeath/7DLR Challenge Music - Gameplay - NearDeath A1 - v1_073B4D0C.wem</CachePath>
 				</File>
 				<File Id="726965583" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music\Menu Theme\7DLR Challenge Music - Menu B2 - v1.wav</ShortName>
-					<CachePath>SFX/Music/Menu Theme/7DLR Challenge Music - Menu B2 - v1_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/Music/Menu Theme/7DLR Challenge Music - Menu B2 - v1_073B4D0C.wem</CachePath>
 				</File>
 				<File Id="728141341" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music\Menu Theme\7DLR Challenge Music - Menu A1 - v1.wav</ShortName>
-					<CachePath>SFX/Music/Menu Theme/7DLR Challenge Music - Menu A1 - v1_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/Music/Menu Theme/7DLR Challenge Music - Menu A1 - v1_073B4D0C.wem</CachePath>
+				</File>
+				<File Id="760580783" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\Gameplay Theme\Gameplay LowHealth\7DLR Challenge Music - Gameplay - LowHealth B1 - v1.wav</ShortName>
+					<CachePath>SFX/Music/Gameplay Theme/Gameplay LowHealth/7DLR Challenge Music - Gameplay - LowHealth B1 - v1_073B4D0C.wem</CachePath>
+				</File>
+				<File Id="827053281" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\Gameplay Theme\Gameplay LowHealth\7DLR Challenge Music - Gameplay - LowHealth A1 - v1.wav</ShortName>
+					<CachePath>SFX/Music/Gameplay Theme/Gameplay LowHealth/7DLR Challenge Music - Gameplay - LowHealth A1 - v1_073B4D0C.wem</CachePath>
 				</File>
 				<File Id="856125103" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music\Menu Theme\7DLR Challenge Music - Menu B1 - v1.wav</ShortName>
-					<CachePath>SFX/Music/Menu Theme/7DLR Challenge Music - Menu B1 - v1_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/Music/Menu Theme/7DLR Challenge Music - Menu B1 - v1_073B4D0C.wem</CachePath>
 				</File>
-				<File Id="1009411052" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Music\Menu Theme\7DLR Challenge Music - Menu B3 - v1.wav</ShortName>
-					<CachePath>SFX/Music/Menu Theme/7DLR Challenge Music - Menu B3 - v1_D79FB2B7.wem</CachePath>
+				<File Id="993555837" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\Gameplay Theme\Gameplay NearDeath\7DLR Challenge Music - Gameplay - NearDeath B1 - v1.wav</ShortName>
+					<CachePath>SFX/Music/Gameplay Theme/Gameplay NearDeath/7DLR Challenge Music - Gameplay - NearDeath B1 - v1_073B4D0C.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
 				<Event Id="2932040671" Name="Play_Music" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="105536463"/>
-						<MediaRef Id="335416276"/>
-						<MediaRef Id="363933681"/>
-						<MediaRef Id="726965583"/>
-						<MediaRef Id="728141341"/>
-						<MediaRef Id="856125103"/>
-						<MediaRef Id="1009411052"/>
-					</MediaRefs>
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="1045871717" Id="3374585465"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="151362964" Id="0"/>
+									<MediaRefs>
+										<MediaRef Id="105536463"/>
+										<MediaRef Id="335416276"/>
+										<MediaRef Id="726965583"/>
+										<MediaRef Id="728141341"/>
+										<MediaRef Id="856125103"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="1045871717" Id="984691642"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="151362964" Id="2429688720"/>
+									<MediaRefs>
+										<MediaRef Id="55910029"/>
+										<MediaRef Id="262031508"/>
+										<MediaRef Id="269941412"/>
+										<MediaRef Id="480506085"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="1045871717" Id="984691642"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="151362964" Id="1017222595"/>
+									<MediaRefs>
+										<MediaRef Id="163464048"/>
+										<MediaRef Id="374715100"/>
+										<MediaRef Id="760580783"/>
+										<MediaRef Id="827053281"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="1045871717" Id="984691642"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="151362964" Id="898449699"/>
+									<MediaRefs>
+										<MediaRef Id="205547633"/>
+										<MediaRef Id="447867355"/>
+										<MediaRef Id="725937632"/>
+										<MediaRef Id="993555837"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="1045871717" Id="984691642"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="151362964" Id="779278001"/>
+									<MediaRefs>
+										<MediaRef Id="105536463"/>
+										<MediaRef Id="335416276"/>
+										<MediaRef Id="726965583"/>
+										<MediaRef Id="728141341"/>
+										<MediaRef Id="856125103"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="2837384057" Name="Stop_Music" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<GameParameters>
 				<GameParameter Id="4105377574" Name="RTPC_PlayerLife"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="1045871717" Name="GameStatus">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="984691642" Name="InGame"/>
+						<State Id="3374585465" Name="InMenu"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="151362964" Name="PlayerHealth">
+					<GameParameterRef Id="4105377574"/>
+					<Switches>
+						<Switch Id="779278001" Name="Death"/>
+						<Switch Id="898449699" Name="NearDeath"/>
+						<Switch Id="1017222595" Name="LowHealth"/>
+						<Switch Id="2429688720" Name="FullHealth"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8C46DD56-7081-65F0-D5A8-6B81789E308F}</FileHash>
+	<FileHash>{745B4A96-84FD-0D5D-2572-4C69F8E8E5FF}</FileHash>
 </SoundBanksInfo>
