@@ -47,7 +47,9 @@ public class EnemyController : MonoBehaviour
             case EnemyType.Watchman:
                 StartCoroutine(nameof(WatchmanBehaviour));
                 transform.GetChild(0).GetChild(3).GetComponent<SpriteRenderer>().sprite = watchmanSprites[0];
+                transform.GetChild(0).GetChild(3).GetComponent<SpriteRenderer>().color = newColor;
                 transform.GetChild(0).GetChild(2).GetComponent<SpriteRenderer>().sprite = watchmanSprites[enemyLevel];
+                transform.GetChild(0).GetChild(2).GetComponent<SpriteRenderer>().color = newColor;
                 break;
             case EnemyType.Sniper:
                 if (playerPos == null) playerPos = FindObjectOfType<PlayerController>().transform;
