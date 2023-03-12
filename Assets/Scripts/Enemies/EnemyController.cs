@@ -40,13 +40,6 @@ public class EnemyController : MonoBehaviour
         pointB = transform.GetChild(1).GetChild(1).position;
         bulletParent = transform.GetChild(2);
 
-        // Not the best option, but it works at this moment
-        if (playerPos == null)
-            playerPos = FindObjectOfType<PlayerController>().transform;
-    }
-
-    void Start()
-    {
         switch (enemyType)
         {
             case EnemyType.Watchman:
@@ -55,6 +48,11 @@ public class EnemyController : MonoBehaviour
                 transform.GetChild(0).GetChild(2).GetComponent<SpriteRenderer>().sprite = watchmanSprites[enemyLevel];
                 break;
             case EnemyType.Sniper:
+                if (playerPos == null)
+                {
+                    playerPos = FindObjectOfType<PlayerController>().transform;
+                }
+
                 StartCoroutine(nameof(SniperBehaviour));
                 transform.GetChild(0).GetChild(3).GetComponent<SpriteRenderer>().sprite = sniperSprites[0];
                 transform.GetChild(0).GetChild(2).GetComponent<SpriteRenderer>().sprite = sniperSprites[enemyLevel];

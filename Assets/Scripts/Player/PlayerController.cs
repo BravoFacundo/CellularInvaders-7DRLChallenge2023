@@ -11,7 +11,6 @@ public class PlayerController : MonoBehaviour, IDamageable
     [SerializeField] private Transform lifesParentTransform;
     private PlayerHealth healthComponent;
 
-    [SerializeField] private MovementPowerUpConfigurationSO a;
     [SerializeField] private TrailRenderer[] speedPowerUpTrailRenderers;
     private PowerUpController powerUpsComponent; 
 
@@ -70,20 +69,14 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            powerUpsComponent.AddSpeedPowerUp(a);
-        }
-
         powerUpsComponent.Update(Time.deltaTime);
-
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            healthComponent.TakeDamage(1);
-        }
-
         movementComponent.Update();
         healthComponent.Update();
+    }
+
+    public void AddSpeedPowerUp(MovementPowerUpConfigurationSO configuration)
+    {
+        powerUpsComponent.AddSpeedPowerUp(configuration);
     }
 
     private void FixedUpdate()
