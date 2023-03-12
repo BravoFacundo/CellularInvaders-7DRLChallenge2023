@@ -168,7 +168,6 @@ MonoBehaviour:
   ghostTransform: {fileID: 0}
   healtIconPrefab: {fileID: 6902121517120991731, guid: a8c4626805f040242bbdce2642631b62, type: 3}
   lifesParentTransform: {fileID: 3849905861790318257}
-  a: {fileID: 11400000, guid: 081b54666b7e03144be4839ec04298f9, type: 2}
   speedPowerUpTrailRenderers:
   - {fileID: 3187371944629139301}
   - {fileID: 236936209333870729}
@@ -486,7 +485,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.15
+  m_Time: 0.17
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -626,7 +625,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.15
+  m_Time: 0.17
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
