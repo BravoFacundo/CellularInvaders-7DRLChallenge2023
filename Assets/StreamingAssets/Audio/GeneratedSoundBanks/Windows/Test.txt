@@ -9,7 +9,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	4276556170	Play_Test_Beep_1kHz			\Test\Test\Play_Test_Beep_1kHz	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	638319349	Test_Beep_1kHz_3D	C:\Users\adria\Documents\WwiseProjects\7DRL Challenge 2023\.cache\Windows\SFX\Test\Test_Beep_1kHz_10C4C929.wem		\Actor-Mixer Hierarchy\Test\Test\Test\Test_3D\Test_Beep_1kHz_3D		12734
-	723519266	Test_Drumkit_Loop_3D	C:\Users\adria\Documents\WwiseProjects\7DRL Challenge 2023\.cache\Windows\SFX\Test\Drumkit_Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Test\Test\Test\Test_3D\Test_Drumkit_Loop_3D		1536096
-	797743916	Test_Beep_500Hz_3D	C:\Users\adria\Documents\WwiseProjects\7DRL Challenge 2023\.cache\Windows\SFX\Test\Test_Beep_500Hz_10C4C929.wem		\Actor-Mixer Hierarchy\Test\Test\Test\Test_3D\Test_Beep_500Hz_3D		11692
+	638319349	Test_Beep_1kHz_3D	C:\Users\adria\Documents\WwiseProjects\7DRL Challenge 2023\.cache\Windows\SFX\Test\Test_Beep_1kHz_755F56E2.wem		\Actor-Mixer Hierarchy\Test\Test\Test\Test_3D\Test_Beep_1kHz_3D		1726
+	723519266	Test_Drumkit_Loop_3D	C:\Users\adria\Documents\WwiseProjects\7DRL Challenge 2023\.cache\Windows\SFX\Test\Drumkit_Loop_073B4D0C.wem		\Actor-Mixer Hierarchy\Test\Test\Test\Test_3D\Test_Drumkit_Loop_3D		509350
+	797743916	Test_Beep_500Hz_3D	C:\Users\adria\Documents\WwiseProjects\7DRL Challenge 2023\.cache\Windows\SFX\Test\Test_Beep_500Hz_755F56E2.wem		\Actor-Mixer Hierarchy\Test\Test\Test\Test_3D\Test_Beep_500Hz_3D		1583
 
