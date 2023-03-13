@@ -6,6 +6,8 @@ public class PlayerMovement
     private readonly Transform playerTransform;
     private float movementSpeedMultiplier = 1f;
 
+    private Vector2 playerPosition;
+
     public PlayerMovement(Transform playerTransform, PlayerConfigurationSO playerConfiguration)
     {
         this.playerTransform = playerTransform;
@@ -16,7 +18,12 @@ public class PlayerMovement
     {
         Vector2 mouseWorldPosition = CalculateMousePositionInWorldSpace();
         Vector2 interpolatedPosition = CalculateInterpolatedPosition(mouseWorldPosition);
-        playerTransform.position = interpolatedPosition;
+        playerPosition = interpolatedPosition;
+    }
+
+    public void FixedUpdate()
+    {
+        playerTransform.position = playerPosition;
     }
 
     public void SetMovementSpeedMultiplier(float newValue)
@@ -33,7 +40,12 @@ public class PlayerMovement
 
     private Vector2 CalculateInterpolatedPosition(Vector2 mouseWorldPosition)
     {
+#if UNITY_EDITOR
+        float speedTweak = 1.0f;
+#else
+        float speedTweak = 0.25f;
+#endif
         Vector2 velocity = Vector2.zero;
-        return Vector2.SmoothDamp(playerTransform.position, mouseWorldPosition, ref velocity, Time.deltaTime * playerConfiguration.MovementSpeed * movementSpeedMultiplier);
+        return Vector2.SmoothDamp(playerTransform.position, mouseWorldPosition, ref velocity, Time.deltaTime * speedTweak * playerConfiguration.MovementSpeed * movementSpeedMultiplier);
     }
 }

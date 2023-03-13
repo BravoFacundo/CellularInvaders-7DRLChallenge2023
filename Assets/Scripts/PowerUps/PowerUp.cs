@@ -8,10 +8,20 @@ public class PowerUp : MonoBehaviour
 
     [SerializeField] private MovementPowerUpConfigurationSO movementConfiguration;
     private CoinUICounter coinsCounterComponent;
+    private Transform playerTransform;
 
     private void Awake()
     {
         coinsCounterComponent = FindObjectOfType<CoinUICounter>(true);
+        playerTransform = FindObjectOfType<PlayerController>().transform;
+    }
+
+    private void Update()
+    {
+        Vector2 directionVector = (Vector2)playerTransform.position - (Vector2)transform.position;
+        float sqrDistanceToPlayer = directionVector.sqrMagnitude;
+        if (sqrDistanceToPlayer < 4.0f)
+            transform.position += (1 / sqrDistanceToPlayer) * Time.deltaTime * (Vector3)directionVector;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

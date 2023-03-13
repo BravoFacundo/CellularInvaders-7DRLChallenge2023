@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour, IDamageable
     [SerializeField] private PlayerConfigurationSO configuration;
     private PlayerMovement movementComponent;
     [SerializeField] private Transform ghostTransform;
-    private Rigidbody2D rigidbody2D;
+    private new Rigidbody2D rigidbody2D;
 
     [SerializeField] private GameObject healtIconPrefab;
     [SerializeField] private Transform lifesParentTransform;
@@ -89,6 +89,8 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     private void FixedUpdate()
     {
+        movementComponent.FixedUpdate();
+
         rigidbody2D.MovePosition(ghostTransform.position);
         ghostTransform.position = transform.position;
     }
