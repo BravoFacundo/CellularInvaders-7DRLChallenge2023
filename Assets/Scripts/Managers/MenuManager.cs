@@ -20,6 +20,7 @@ public class MenuManager : MonoBehaviour
     private void Start()
     {
         AkSoundEngine.PostEvent("Play_Music", gameObject);
+        AkSoundEngine.PostEvent("Play_ENV_AmbienceBG", gameObject);
     }
 
     public void OnMouseClick()
