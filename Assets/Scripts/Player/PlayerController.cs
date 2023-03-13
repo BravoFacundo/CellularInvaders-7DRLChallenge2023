@@ -108,8 +108,6 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     private void PlayerController_OnPlayerDead()
     {
-        // Spawn retry UI
-        // Pause game
-        // Go to menu
+        FindObjectOfType<PauseMenuManager>(includeInactive: true).LoseGame();
     }
 }

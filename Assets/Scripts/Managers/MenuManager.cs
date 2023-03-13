@@ -12,6 +12,8 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private string buttonHoverSFX;
     [SerializeField] private string startSFX;
 
+    private static bool _applicationWasRunning = false;
+
     private void Awake()
     {
         AkSoundEngine.SetState("GameStatus", "InMenu");
@@ -19,6 +21,9 @@ public class MenuManager : MonoBehaviour
 
     private void Start()
     {
+        if (_applicationWasRunning) return;
+
+        _applicationWasRunning = true;
         AkSoundEngine.PostEvent("Play_Music", gameObject);
         AkSoundEngine.PostEvent("Play_ENV_AmbienceBG", gameObject);
     }

@@ -7,6 +7,7 @@ public class PauseMenuManager : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     [SerializeField] private PauseMenuUI pauseMenuUI;
+    [SerializeField] private RetryMenuUI retryMenuUI;
 
     [Header("Wwise Events Strings")]
     [SerializeField] private string buttonClickSFX;
@@ -16,6 +17,8 @@ public class PauseMenuManager : MonoBehaviour
     [SerializeField] private Slider sliderMaster;
     [SerializeField] private Slider sliderSFX;
     [SerializeField] private Slider sliderMusic;
+
+    private void Awake() => Resume();
 
     private void Update()
     {
@@ -57,6 +60,18 @@ public class PauseMenuManager : MonoBehaviour
     private void Pause()
     {
         pauseMenuUI.gameObject.SetActive(true);
+        Time.timeScale = 0f;
+        GameIsPaused = true;
+    }
+
+    public void ContinueGame()
+    {
+        if (GameIsPaused) Resume();
+    }
+
+    public void LoseGame()
+    {
+        retryMenuUI.gameObject.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
     }

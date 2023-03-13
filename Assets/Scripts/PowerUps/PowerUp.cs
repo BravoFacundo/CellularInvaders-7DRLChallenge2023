@@ -18,6 +18,8 @@ public class PowerUp : MonoBehaviour
 
     private void Update()
     {
+        if (isShopPowerUp) return;
+
         Vector2 directionVector = (Vector2)playerTransform.position - (Vector2)transform.position;
         float sqrDistanceToPlayer = directionVector.sqrMagnitude;
         if (sqrDistanceToPlayer < 4.0f)
@@ -28,9 +30,9 @@ public class PowerUp : MonoBehaviour
     {
         if (collision.tag.CompareTo("Player") == 0)
         {
-            if(isShopPowerUp)
+            if (isShopPowerUp)
             {
-                if(coinsCounterComponent.GetCoins() < coinCost)
+                if (coinsCounterComponent.GetCoins() < coinCost)
                 {
                     return;
                 }
@@ -40,7 +42,7 @@ public class PowerUp : MonoBehaviour
                 }
             }
 
-            if(powerUpType.CompareTo("Movement") == 0)
+            if (powerUpType.CompareTo("Movement") == 0)
             {
                 collision.gameObject.GetComponent<PlayerController>().AddSpeedPowerUp(movementConfiguration);
                 Destroy(gameObject);
