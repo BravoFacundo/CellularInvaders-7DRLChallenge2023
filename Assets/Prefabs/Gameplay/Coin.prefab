@@ -168,3 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecbf4d871f1b82a4e8a23d85e3eb7d19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerGetCoin:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 1fc4f70c1465910418dda6c96a1a1ff0, type: 2}

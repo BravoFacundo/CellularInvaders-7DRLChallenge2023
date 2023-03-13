@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: a26c54d6bf9d6947bca8c25094a59526
     GuidInternal: 
-    m_lastTime: -8585229531534475818
+    m_lastTime: -8585229465304712915
     List:
     - name: AmbienceMaster
       guid: cc13caf61c3a4c419fb4223aa6523816
@@ -233,7 +233,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Main
     guid: 8b23ce3e9aa4224ab80e4ceeaab7e8b3
     GuidInternal: 
-    m_lastTime: -8585229605624002614
+    m_lastTime: -8585229405541283801
     List:
     - name: Main
       guid: 417e0ff7929a184eab47af28e049a655
@@ -524,8 +524,45 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: 43a92d606c35db4ea8634a5101603e18
     GuidInternal: 
-    m_lastTime: -8585242377265680197
-    List: []
+    m_lastTime: -8585229439565006252
+    List:
+    - name: Play_Player_GetCoin
+      guid: 921fdcf4326c894db08fe063a722d5e7
+      id: 3010468147
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 43a92d606c35db4ea8634a5101603e18
+      - ElementName: Player
+        ObjectType: 4
+        guid: fad7cc5ccf79f94181b1ec4e0cb3f361
+      - ElementName: Play_Player_GetCoin
+        ObjectType: 3
+        guid: 921fdcf4326c894db08fe063a722d5e7
+      Path: Events\Player\Player\Play_Player_GetCoin
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Player
+      guid: fad7cc5ccf79f94181b1ec4e0cb3f361
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 43a92d606c35db4ea8634a5101603e18
+      - ElementName: Player
+        ObjectType: 4
+        guid: fad7cc5ccf79f94181b1ec4e0cb3f361
+      Path: Events\Player\Player
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Test.wwu
     PathAndIcons:
     - ElementName: Events
@@ -1140,7 +1177,7 @@ MonoBehaviour:
     m_lastTime: -8585242639182600351
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 1400000016000000
+  ExpandedWaapiItemIds: 05000000070000000e0000000f0000001400000016000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
