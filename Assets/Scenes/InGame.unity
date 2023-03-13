@@ -422,6 +422,7 @@ GameObject:
   m_Component:
   - component: {fileID: 168620187}
   - component: {fileID: 168620188}
+  - component: {fileID: 168620189}
   m_Layer: 5
   m_Name: RetryMenu
   m_TagString: Untagged
@@ -459,6 +460,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 168620186}
   m_CullTransparentMesh: 1
+--- !u!114 &168620189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168620186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ff15a93912e904499373dce1c546b36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &201153646
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,9 +586,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: NavigationManager, Assembly-CSharp
-        m_MethodName: OnMouseClick
+      - m_Target: {fileID: 168620189}
+        m_TargetAssemblyTypeName: RetryMenuUI, Assembly-CSharp
+        m_MethodName: OnRetry
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1327,9 +1340,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: NavigationManager, Assembly-CSharp
-        m_MethodName: OnMouseClick
+      - m_Target: {fileID: 168620189}
+        m_TargetAssemblyTypeName: RetryMenuUI, Assembly-CSharp
+        m_MethodName: OnExitMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2357,6 +2370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 2044092400}
+  retryMenuUI: {fileID: 168620189}
   buttonClickSFX: Play_Test_Beep_1kHz
   buttonHoverSFX: Play_Test_Beep_500Hz
   sliderMaster: {fileID: 91337625}

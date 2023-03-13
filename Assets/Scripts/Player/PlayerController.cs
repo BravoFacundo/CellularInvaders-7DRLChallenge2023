@@ -108,6 +108,6 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     private void PlayerController_OnPlayerDead()
     {
-        FindObjectOfType<PauseMenuManager>().LoseGame();
+        FindObjectOfType<PauseMenuManager>(includeInactive: true).LoseGame();
     }
 }

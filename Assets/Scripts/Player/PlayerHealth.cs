@@ -69,7 +69,7 @@ public class PlayerHealth
             OnReceiveDamage?.Invoke();
         }
 
-        if(activeLifeIcons.Count == 0)
+        if (activeLifeIcons.Count == 0)
         {
             OnPlayerDead?.Invoke();
         }
