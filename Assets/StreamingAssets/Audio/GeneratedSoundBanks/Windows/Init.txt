@@ -23,12 +23,17 @@ State	ID	Name	State Group			Notes
 	3385864285	InDangerousRoom	RoomType			
 	3819053597	InQuietRoom	RoomType			
 
+Custom State	ID	Name	State Group	Owner		Notes
+	643215226	InMenu	GameStatus	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFXMaster\CoreMaster		
+	782234075	InMenu	GameStatus	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFXMaster\AmbienceMaster		
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	2378823330	RTPC_MusicVolume			\Default Work Unit\RTPC_MusicVolume	
 	2582501215	RTPC_MasterVolume			\Default Work Unit\RTPC_MasterVolume	
 	2644490154	RTPC_SFXVolume			\Default Work Unit\RTPC_SFXVolume	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	205869254	CoreMaster			\Default Work Unit\Master Audio Bus\SFXMaster\CoreMaster	
 	1681633080	SFXMaster			\Default Work Unit\Master Audio Bus\SFXMaster	
 	1836367610	FoesMaster			\Default Work Unit\Master Audio Bus\SFXMaster\FoesMaster	
 	2611281843	AmbienceMaster			\Default Work Unit\Master Audio Bus\SFXMaster\AmbienceMaster	
@@ -39,6 +44,9 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	1686871543	ReverbMaster			\Default Work Unit\Master Audio Bus\SFXMaster\ReverbMaster	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1459522457	Brick_Wall_Minus_1dB_Peak_Fast_Release	Wwise Peak Limiter			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

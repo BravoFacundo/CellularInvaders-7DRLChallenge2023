@@ -9,23 +9,33 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{601C124D-3A17-1A02-6A3E-CE8E6EFD35EC}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{C545D2BB-F0BB-4C75-FF45-38F982E5AE4F}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<ShareSets>
+					<Plugin Id="1459522457" Name="Brick_Wall_Minus_1dB_Peak_Fast_Release" LibName="Wwise Peak Limiter" LibId="7208963"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="205869254" Name="CoreMaster"/>
 				<Bus Id="1681633080" Name="SFXMaster"/>
 				<Bus Id="1836367610" Name="FoesMaster"/>
 				<Bus Id="2611281843" Name="AmbienceMaster"/>
 				<Bus Id="3157003241" Name="Test"/>
 				<Bus Id="3199789248" Name="MusicMaster"/>
 				<Bus Id="3538689948" Name="PlayerMaster"/>
-				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3803692087" Name="Master Audio Bus">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1459522457"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
 			</Busses>
 			<AuxBusses>
 				<AuxBus Id="1686871543" Name="ReverbMaster"/>
@@ -124,13 +134,17 @@
 				<Event Id="2503746936" Name="Stop_Test_Drumkit_Loop_3D" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{F0540699-380F-7368-745C-695A0C05ACB3}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{76A024D4-04FA-3329-59E5-5499E8402969}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
 				<File Id="55910029" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music\Gameplay Theme\Gameplay FullLife\7DLR Challenge Music - Gameplay - FullHealth A1 - v1.wav</ShortName>
 					<CachePath>SFX/Music/Gameplay Theme/Gameplay FullLife/7DLR Challenge Music - Gameplay - FullHealth A1 - v1_073B4D0C.wem</CachePath>
+				</File>
+				<File Id="73566671" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Core\7DLR_Core_Explosion_2.wav</ShortName>
+					<CachePath>SFX/Core/7DLR_Core_Explosion_2_96FE8AA3.wem</CachePath>
 				</File>
 				<File Id="105536463" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music\Menu Theme\7DLR Challenge Music - Menu Intro - v1.wav</ShortName>
@@ -140,9 +154,17 @@
 					<ShortName>Music\Gameplay Theme\Gameplay LowHealth\7DLR Challenge Music - Gameplay - LowHealth A2 - v1.wav</ShortName>
 					<CachePath>SFX/Music/Gameplay Theme/Gameplay LowHealth/7DLR Challenge Music - Gameplay - LowHealth A2 - v1_073B4D0C.wem</CachePath>
 				</File>
+				<File Id="172569112" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Core\7DLR_Core_Collision_3.wav</ShortName>
+					<CachePath>SFX/Core/7DLR_Core_Collision_3_755F56E2.wem</CachePath>
+				</File>
 				<File Id="205547633" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music\Gameplay Theme\Gameplay NearDeath\7DLR Challenge Music - Gameplay - NearDeath B2 - v1.wav</ShortName>
 					<CachePath>SFX/Music/Gameplay Theme/Gameplay NearDeath/7DLR Challenge Music - Gameplay - NearDeath B2 - v1_073B4D0C.wem</CachePath>
+				</File>
+				<File Id="219536581" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\7DLR_Player_GetCoin_1.wav</ShortName>
+					<CachePath>SFX/Player/7DLR_Player_GetCoin_1_5E7C15BA.wem</CachePath>
 				</File>
 				<File Id="262031508" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music\Gameplay Theme\Gameplay FullLife\7DLR Challenge Music - Gameplay - FullHealth B1 - v1.wav</ShortName>
@@ -168,6 +190,10 @@
 					<ShortName>Music\Gameplay Theme\Gameplay FullLife\7DLR Challenge Music - Gameplay - FullHealth B2 - v1.wav</ShortName>
 					<CachePath>SFX/Music/Gameplay Theme/Gameplay FullLife/7DLR Challenge Music - Gameplay - FullHealth B2 - v1_073B4D0C.wem</CachePath>
 				</File>
+				<File Id="622677594" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Core\7DLR_Core_Collision_2.wav</ShortName>
+					<CachePath>SFX/Core/7DLR_Core_Collision_2_755F56E2.wem</CachePath>
+				</File>
 				<File Id="725937632" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music\Gameplay Theme\Gameplay NearDeath\7DLR Challenge Music - Gameplay - NearDeath A1 - v1.wav</ShortName>
 					<CachePath>SFX/Music/Gameplay Theme/Gameplay NearDeath/7DLR Challenge Music - Gameplay - NearDeath A1 - v1_073B4D0C.wem</CachePath>
@@ -180,9 +206,25 @@
 					<ShortName>Music\Menu Theme\7DLR Challenge Music - Menu A1 - v1.wav</ShortName>
 					<CachePath>SFX/Music/Menu Theme/7DLR Challenge Music - Menu A1 - v1_073B4D0C.wem</CachePath>
 				</File>
+				<File Id="755708543" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\7DLR_Player_GetCoin_2.wav</ShortName>
+					<CachePath>SFX/Player/7DLR_Player_GetCoin_2_89DB756A.wem</CachePath>
+				</File>
 				<File Id="760580783" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music\Gameplay Theme\Gameplay LowHealth\7DLR Challenge Music - Gameplay - LowHealth B1 - v1.wav</ShortName>
 					<CachePath>SFX/Music/Gameplay Theme/Gameplay LowHealth/7DLR Challenge Music - Gameplay - LowHealth B1 - v1_073B4D0C.wem</CachePath>
+				</File>
+				<File Id="760678182" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Core\7DLR_Core_Collision_1.wav</ShortName>
+					<CachePath>SFX/Core/7DLR_Core_Collision_1_755F56E2.wem</CachePath>
+				</File>
+				<File Id="806715135" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Core\7DLR_Core_Explosion_3.wav</ShortName>
+					<CachePath>SFX/Core/7DLR_Core_Explosion_3_FE725EE6.wem</CachePath>
+				</File>
+				<File Id="821267989" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Core\7DLR_Core_Countdown_3.wav</ShortName>
+					<CachePath>SFX/Core/7DLR_Core_Countdown_3_009E61F5.wem</CachePath>
 				</File>
 				<File Id="827053281" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music\Gameplay Theme\Gameplay LowHealth\7DLR Challenge Music - Gameplay - LowHealth A1 - v1.wav</ShortName>
@@ -192,12 +234,54 @@
 					<ShortName>Music\Menu Theme\7DLR Challenge Music - Menu B1 - v1.wav</ShortName>
 					<CachePath>SFX/Music/Menu Theme/7DLR Challenge Music - Menu B1 - v1_073B4D0C.wem</CachePath>
 				</File>
+				<File Id="861614799" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Core\7DLR_Core_Explosion_1.wav</ShortName>
+					<CachePath>SFX/Core/7DLR_Core_Explosion_1_E6B93BDF.wem</CachePath>
+				</File>
+				<File Id="866690252" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Enviroment\7DLR_ENV_BG_Loop.wav</ShortName>
+					<CachePath>SFX/Enviroment/7DLR_ENV_BG_Loop_073B4D0C.wem</CachePath>
+				</File>
+				<File Id="983312686" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Core\7DLR_Core_Countdown_2.wav</ShortName>
+					<CachePath>SFX/Core/7DLR_Core_Countdown_2_24D122D6.wem</CachePath>
+				</File>
 				<File Id="993555837" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music\Gameplay Theme\Gameplay NearDeath\7DLR Challenge Music - Gameplay - NearDeath B1 - v1.wav</ShortName>
 					<CachePath>SFX/Music/Gameplay Theme/Gameplay NearDeath/7DLR Challenge Music - Gameplay - NearDeath B1 - v1_073B4D0C.wem</CachePath>
 				</File>
+				<File Id="1031421905" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Core\7DLR_Core_Countdown_1.wav</ShortName>
+					<CachePath>SFX/Core/7DLR_Core_Countdown_1_4F70DA11.wem</CachePath>
+				</File>
+				<File Id="1054182585" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\7DLR_Player_GetCoin_3.wav</ShortName>
+					<CachePath>SFX/Player/7DLR_Player_GetCoin_3_778947D1.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
+				<Event Id="1904839238" Name="Play_Core_Collision" MaxAttenuation="40" DurationType="OneShot" DurationMin="2.2689066" DurationMax="2.792784">
+					<MediaRefs>
+						<MediaRef Id="172569112"/>
+						<MediaRef Id="622677594"/>
+						<MediaRef Id="760678182"/>
+						<MediaRef Id="821267989"/>
+						<MediaRef Id="983312686"/>
+						<MediaRef Id="1031421905"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="828558183" Name="Play_Core_Explosion" MaxAttenuation="40" DurationType="OneShot" DurationMin="1.8887779" DurationMax="2.3861954">
+					<MediaRefs>
+						<MediaRef Id="73566671"/>
+						<MediaRef Id="806715135"/>
+						<MediaRef Id="861614799"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3399054955" Name="Play_ENV_AmbienceBG" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="866690252"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2932040671" Name="Play_Music" DurationType="Infinite">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -274,6 +358,14 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="3010468147" Name="Play_Player_GetCoin" DurationType="OneShot" DurationMin="0.6040795" DurationMax="0.7632742">
+					<MediaRefs>
+						<MediaRef Id="219536581"/>
+						<MediaRef Id="755708543"/>
+						<MediaRef Id="1054182585"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3714348409" Name="Stop_ENV_AmbienceBG" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2837384057" Name="Stop_Music" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<GameParameters>
@@ -301,5 +393,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{745B4A96-84FD-0D5D-2572-4C69F8E8E5FF}</FileHash>
+	<FileHash>{69A22CD1-460B-08A6-B978-273AA8709474}</FileHash>
 </SoundBanksInfo>
