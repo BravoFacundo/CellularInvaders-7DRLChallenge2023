@@ -40,7 +40,7 @@ public class EnemyController : MonoBehaviour
         pointB = transform.GetChild(1).GetChild(1).position;
         bulletParent = transform.GetChild(2);
 
-        Color newColor = Color.HSVToRGB(0,0, 1f - enemyLevel * 0.1f );
+        Color newColor = Color.HSVToRGB(0,0, 1f - enemyLevel * 0.1f);
 
         switch (enemyType)
         {
@@ -92,6 +92,15 @@ public class EnemyController : MonoBehaviour
     {
         if (followTarget) MoveEnemy(direction);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            collision.gameObject.GetComponent<IDamageable>().TakeDamage(1);
+        }
+    }
+
     void MoveEnemy(Vector2 direction)
     {
         rb.MovePosition((Vector2)transform.position + (enemySpeed * Time.deltaTime * direction));
@@ -120,7 +129,7 @@ public class EnemyController : MonoBehaviour
         while (true)
         {
             Transform newBullet = Instantiate(bulletPrefab, bulletParent.position, Quaternion.identity);
-            newBullet.GetComponent<Rigidbody2D>().AddForce(50f * enemySpeedBackup * direction);
+            newBullet.GetComponent<Rigidbody2D>().AddForce(30f * enemySpeedBackup * direction);
             newBullet.GetComponent<BulletBehaviour>().bulletLevel = enemyLevel;
             newBullet.GetComponent<BulletBehaviour>().ChangeBulletSprite();
 

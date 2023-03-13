@@ -171,6 +171,7 @@ MonoBehaviour:
   speedPowerUpTrailRenderers:
   - {fileID: 3187371944629139301}
   - {fileID: 236936209333870729}
+  cellularRenderer: {fileID: 77281582746516200}
 --- !u!50 &5697143219105637211
 Rigidbody2D:
   serializedVersion: 4

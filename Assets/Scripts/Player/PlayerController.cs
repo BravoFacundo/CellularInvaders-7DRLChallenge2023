@@ -14,7 +14,12 @@ public class PlayerController : MonoBehaviour, IDamageable
     private PlayerHealth healthComponent;
 
     [SerializeField] private TrailRenderer[] speedPowerUpTrailRenderers;
-    private PowerUpController powerUpsComponent; 
+    private PowerUpController powerUpsComponent;
+
+    [SerializeField] private SpriteRenderer cellularRenderer;
+    private Color cellularColor;
+    private float invulnerabilityCounter = 0f, invulnerabilityTime = 1.25f;
+    private bool isInvunerable = false;
 
     private void Awake()
     {
@@ -22,6 +27,7 @@ public class PlayerController : MonoBehaviour, IDamageable
         movementComponent = new PlayerMovement(ghostTransform, configuration);
         healthComponent = new PlayerHealth(configuration, healtIconPrefab, lifesParentTransform);
         powerUpsComponent = new PowerUpController();
+        cellularColor = cellularRenderer.color;
 
         AkSoundEngine.SetRTPCValue("RTPC_PlayerLife", healthComponent.GetLifesLeft());
     }
@@ -80,6 +86,22 @@ public class PlayerController : MonoBehaviour, IDamageable
         powerUpsComponent.Update(Time.deltaTime);
         movementComponent.Update();
         healthComponent.Update();
+
+        // This should be another component, but I'm sleepy as hell, it works
+        if (isInvunerable)
+        {
+            invulnerabilityCounter -= Time.deltaTime;
+            if (invulnerabilityCounter <= 0f)
+                isInvunerable = false;
+
+            Color transparent = cellularColor;
+            transparent.a = 0.45f;
+            cellularRenderer.color = transparent;
+        }
+        else
+        {
+            cellularRenderer.color = cellularColor;
+        }
     }
 
     public void AddSpeedPowerUp(MovementPowerUpConfigurationSO configuration)
@@ -97,7 +119,11 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     public void TakeDamage(int damage)
     {
+        if (isInvunerable) return;
+
         healthComponent.TakeDamage(damage);
+        isInvunerable = true;
+        invulnerabilityCounter = invulnerabilityTime;
     }
 
     private void PlayerDeadEvents()
