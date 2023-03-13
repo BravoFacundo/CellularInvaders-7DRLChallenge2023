@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenuUI : MonoBehaviour
 {
@@ -11,4 +12,8 @@ public class PauseMenuUI : MonoBehaviour
     {
         AkSoundEngine.SetState("GameStatus", "InGame");
     }
+
+    public void OnContinue() => FindObjectOfType<PauseMenuManager>().ContinueGame();
+    public void OnRetry() => SceneManager.LoadScene("InGame");
+    public void OnExitMenu() => SceneManager.LoadScene("Menu");
 }
