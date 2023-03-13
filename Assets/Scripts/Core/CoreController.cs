@@ -3,6 +3,11 @@ using UnityEngine;
 
 public class CoreController : MonoBehaviour
 {
+    [Header("Sounds")]
+    public AK.Wwise.Event coreCollision;
+    public AK.Wwise.Event coreExplosion;
+
+    [Header("Config")]
     [SerializeField] private CoreConfigurationSO configuration;
     [SerializeField] private ParticleSystem explosionParticleSystem;
     [SerializeField] private SpriteRenderer coreSpriteRenderer;
@@ -22,6 +27,7 @@ public class CoreController : MonoBehaviour
     {
         if(!isAboutToExplode && other.tag.CompareTo("Player") == 0)
         {
+            coreCollision.Post(gameObject);
             StartCoroutine(ExplosionCountDown());
         }
     }
@@ -38,6 +44,7 @@ public class CoreController : MonoBehaviour
     private void Explode()
     {
         Debug.Log("Boom");
+        coreExplosion.Post(gameObject);
         coreUICounter.AddCore();
         explosionParticleSystem.Play();
         coreSpriteRenderer.enabled = false;
