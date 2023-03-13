@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class CoinController : MonoBehaviour
 {
+    [Header("Sound stuff")]
+    public AK.Wwise.Event playerGetCoin;
+    [Header("Conf stuff")]
     private bool hasBeenCollected = false;
     private CoinUICounter coinUICounter;
     private Transform playerTransform;
@@ -32,6 +35,8 @@ public class CoinController : MonoBehaviour
     {
         hasBeenCollected = true;
         coinUICounter.AddCoins(1);
+        playerGetCoin.Post(gameObject);
+        Debug.Log("Wwise has played " + playerGetCoin + " from " + gameObject);
         Destroy(this.gameObject);
     }
 }

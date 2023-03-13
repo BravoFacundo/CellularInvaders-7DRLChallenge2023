@@ -13,13 +13,18 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_CORE_COLLISION = 1904839238U;
+        static const AkUniqueID PLAY_CORE_EXPLOSION = 828558183U;
+        static const AkUniqueID PLAY_ENV_AMBIENCEBG = 3399054955U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
+        static const AkUniqueID PLAY_PLAYER_GETCOIN = 3010468147U;
         static const AkUniqueID PLAY_TEST_BEEP_1KHZ = 4276556170U;
         static const AkUniqueID PLAY_TEST_BEEP_1KHZ_3D = 1816661476U;
         static const AkUniqueID PLAY_TEST_BEEP_500HZ = 676032487U;
         static const AkUniqueID PLAY_TEST_BEEP_500HZ_3D = 3602201827U;
         static const AkUniqueID PLAY_TEST_DRUMKIT_LOOP = 16532432U;
         static const AkUniqueID PLAY_TEST_DRUMKIT_LOOP_3D = 613478190U;
+        static const AkUniqueID STOP_ENV_AMBIENCEBG = 3714348409U;
         static const AkUniqueID STOP_MUSIC = 2837384057U;
         static const AkUniqueID STOP_TEST_DRUMKIT_LOOP = 3484075926U;
         static const AkUniqueID STOP_TEST_DRUMKIT_LOOP_3D = 2503746936U;
@@ -101,6 +106,7 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID AMBIENCEMASTER = 2611281843U;
+        static const AkUniqueID COREMASTER = 205869254U;
         static const AkUniqueID FOESMASTER = 1836367610U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MUSICMASTER = 3199789248U;
