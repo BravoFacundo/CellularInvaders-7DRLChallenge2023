@@ -63,6 +63,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7697c5e0422298a419e74f56c4bd78db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coreCollision:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e652514a04710cc40a9edbceeb49a647, type: 2}
+  coreExplosion:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 073c49c96a6c8d54d8abd99a0720fe93, type: 2}
   configuration: {fileID: 11400000, guid: 6d01e1cd3e98fcc468a58c360fbe3e12, type: 2}
   explosionParticleSystem: {fileID: 60479987714054823}
   coreSpriteRenderer: {fileID: 60479987608291367}

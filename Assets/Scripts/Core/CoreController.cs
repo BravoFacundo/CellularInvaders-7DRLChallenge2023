@@ -27,7 +27,9 @@ public class CoreController : MonoBehaviour
     {
         if(!isAboutToExplode && other.tag.CompareTo("Player") == 0)
         {
+            //Plays SFX when the player collides with the core
             coreCollision.Post(gameObject);
+            Debug.Log("Wwise has played " + coreCollision + "from" + gameObject);
             StartCoroutine(ExplosionCountDown());
         }
     }
@@ -44,7 +46,9 @@ public class CoreController : MonoBehaviour
     private void Explode()
     {
         Debug.Log("Boom");
+        //Plays SFX core explosion when the core explodes.
         coreExplosion.Post(gameObject);
+        Debug.Log("Wwise has played " + coreExplosion + "from" + gameObject);
         coreUICounter.AddCore();
         explosionParticleSystem.Play();
         coreSpriteRenderer.enabled = false;

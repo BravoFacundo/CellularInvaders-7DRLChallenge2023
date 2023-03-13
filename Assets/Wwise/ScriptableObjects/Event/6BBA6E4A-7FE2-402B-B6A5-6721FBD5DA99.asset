@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728fda1003330d745b3e53059041ef7e, type: 3}
+  m_Name: 6BBA6E4A-7FE2-402B-B6A5-6721FBD5DA99
+  m_EditorClassIdentifier: 
+  objectName: Play_Core_Collision
+  id: 1904839238
+  guid: 6BBA6E4A-7FE2-402B-B6A5-6721FBD5DA99
